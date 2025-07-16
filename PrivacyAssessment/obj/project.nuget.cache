@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "LWPo0qWGLls=",
+  "success": true,
+  "projectFilePath": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\PrivacyAssessment.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\restsharp\\112.1.0\\restsharp.112.1.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.7\\system.configuration.configurationmanager.9.0.7.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.7\\system.diagnostics.eventlog.9.0.7.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.7\\system.security.cryptography.protecteddata.9.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

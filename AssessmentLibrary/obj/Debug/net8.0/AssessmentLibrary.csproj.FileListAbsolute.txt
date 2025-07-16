@@ -1,0 +1,12 @@
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\bin\Debug\net8.0\AssessmentLibrary.deps.json
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\bin\Debug\net8.0\AssessmentLibrary.dll
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\bin\Debug\net8.0\AssessmentLibrary.pdb
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\obj\Debug\net8.0\AssessmentLibrary.csproj.AssemblyReference.cache
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\obj\Debug\net8.0\AssessmentLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\obj\Debug\net8.0\AssessmentLibrary.AssemblyInfoInputs.cache
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\obj\Debug\net8.0\AssessmentLibrary.AssemblyInfo.cs
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\obj\Debug\net8.0\AssessmentLibrary.csproj.CoreCompileInputs.cache
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\obj\Debug\net8.0\AssessmentLibrary.dll
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\obj\Debug\net8.0\refint\AssessmentLibrary.dll
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\obj\Debug\net8.0\AssessmentLibrary.pdb
+E:\Doctorado\PrivacyAssessmentFrontend\AssessmentLibrary\obj\Debug\net8.0\ref\AssessmentLibrary.dll
