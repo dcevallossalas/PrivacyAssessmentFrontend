@@ -21,7 +21,6 @@ namespace PrivacyAssessment
         public Normatives()
         {
             InitializeComponent();
-            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
         }
 
         private void btnFindNormative_Click(object sender, EventArgs e)
@@ -174,7 +173,6 @@ namespace PrivacyAssessment
             lsbCategories.Enabled = true;
             txtNameNormative.Select();
         }
-
         private void setModifyMode()
         {
             cmbNormatives.Enabled = true;

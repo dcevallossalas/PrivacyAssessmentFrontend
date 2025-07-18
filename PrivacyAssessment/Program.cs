@@ -6,7 +6,7 @@ namespace PrivacyAssessment
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Normatives());
+            Application.Run(new FrmLaws());
         }
     }
 }

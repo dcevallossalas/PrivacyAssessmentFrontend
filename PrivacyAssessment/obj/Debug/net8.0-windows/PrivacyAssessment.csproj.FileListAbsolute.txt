@@ -12,13 +12,6 @@ E:\MisDocumentos\Visual Studio Projects\PrivacyAssessment\PrivacyAssessment\obj\
 E:\MisDocumentos\Visual Studio Projects\PrivacyAssessment\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.pdb
 E:\MisDocumentos\Visual Studio Projects\PrivacyAssessment\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.genruntimeconfig.cache
 E:\MisDocumentos\Visual Studio Projects\PrivacyAssessment\PrivacyAssessment\obj\Debug\net8.0-windows\ref\PrivacyAssessment.dll
-E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.csproj.AssemblyReference.cache
-E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.Normatives.resources
-E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.csproj.GenerateResource.cache
-E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.GeneratedMSBuildEditorConfig.editorconfig
-E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.AssemblyInfoInputs.cache
-E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.AssemblyInfo.cs
-E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.csproj.CoreCompileInputs.cache
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\bin\Debug\net8.0-windows\PrivacyAssessment.exe
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\bin\Debug\net8.0-windows\PrivacyAssessment.dll.config
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\bin\Debug\net8.0-windows\PrivacyAssessment.deps.json
@@ -33,6 +26,15 @@ E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\bin\Debug\net8.0-window
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\bin\Debug\net8.0-windows\AssessmentLibrary.dll
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\bin\Debug\net8.0-windows\AssessmentLibrary.pdb
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.csproj.AssemblyReference.cache
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.FrmLaws.resources
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.Normatives.resources
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.csproj.GenerateResource.cache
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.GeneratedMSBuildEditorConfig.editorconfig
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.AssemblyInfoInputs.cache
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.AssemblyInfo.cs
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.csproj.CoreCompileInputs.cache
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.sourcelink.json
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyA.0A5E3A6A.Up2Date
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.dll
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\refint\PrivacyAssessment.dll

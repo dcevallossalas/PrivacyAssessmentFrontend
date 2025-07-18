@@ -16,4 +16,16 @@
     <ProjectReference Include="..\AssessmentLibrary\AssessmentLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="FrmLaws.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="FrmLaws.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>
