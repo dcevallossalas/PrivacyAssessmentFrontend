@@ -1,0 +1,215 @@
+﻿namespace PrivacyAssessment
+{
+    partial class FrmMain
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            btnSearch = new Button();
+            lsbCases = new ListBox();
+            btnManage = new Button();
+            btnNormatives = new Button();
+            btnLaws = new Button();
+            lsbFinalCases = new ListBox();
+            btnAdd = new Button();
+            btnCombine = new Button();
+            btnDelete = new Button();
+            btnUp = new Button();
+            btnDown = new Button();
+            btnGenerate = new Button();
+            btnRename = new Button();
+            SuspendLayout();
+            // 
+            // btnSearch
+            // 
+            btnSearch.Location = new Point(195, 94);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(94, 29);
+            btnSearch.TabIndex = 0;
+            btnSearch.Text = "Search";
+            btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
+            // 
+            // lsbCases
+            // 
+            lsbCases.FormattingEnabled = true;
+            lsbCases.Location = new Point(76, 144);
+            lsbCases.Name = "lsbCases";
+            lsbCases.SelectionMode = SelectionMode.MultiExtended;
+            lsbCases.Size = new Size(341, 184);
+            lsbCases.TabIndex = 1;
+            lsbCases.SelectedIndexChanged += lsbCases_SelectedIndexChanged;
+            // 
+            // btnManage
+            // 
+            btnManage.Location = new Point(323, 387);
+            btnManage.Name = "btnManage";
+            btnManage.Size = new Size(94, 29);
+            btnManage.TabIndex = 2;
+            btnManage.Text = "Manage";
+            btnManage.UseVisualStyleBackColor = true;
+            // 
+            // btnNormatives
+            // 
+            btnNormatives.Location = new Point(76, 387);
+            btnNormatives.Name = "btnNormatives";
+            btnNormatives.Size = new Size(94, 29);
+            btnNormatives.TabIndex = 3;
+            btnNormatives.Text = "Normatives";
+            btnNormatives.UseVisualStyleBackColor = true;
+            btnNormatives.Click += btnNormatives_Click;
+            // 
+            // btnLaws
+            // 
+            btnLaws.Location = new Point(176, 387);
+            btnLaws.Name = "btnLaws";
+            btnLaws.Size = new Size(94, 29);
+            btnLaws.TabIndex = 4;
+            btnLaws.Text = "Laws";
+            btnLaws.UseVisualStyleBackColor = true;
+            btnLaws.Click += btnLaws_Click;
+            // 
+            // lsbFinalCases
+            // 
+            lsbFinalCases.FormattingEnabled = true;
+            lsbFinalCases.Location = new Point(597, 144);
+            lsbFinalCases.Name = "lsbFinalCases";
+            lsbFinalCases.Size = new Size(382, 184);
+            lsbFinalCases.TabIndex = 5;
+            lsbFinalCases.SelectedIndexChanged += lsbFinalCases_SelectedIndexChanged;
+            // 
+            // btnAdd
+            // 
+            btnAdd.Location = new Point(465, 201);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(94, 29);
+            btnAdd.TabIndex = 6;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
+            // 
+            // btnCombine
+            // 
+            btnCombine.Location = new Point(465, 254);
+            btnCombine.Name = "btnCombine";
+            btnCombine.Size = new Size(94, 29);
+            btnCombine.TabIndex = 7;
+            btnCombine.Text = "Combine";
+            btnCombine.UseVisualStyleBackColor = true;
+            btnCombine.Click += btnCombine_Click;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Location = new Point(1002, 387);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(94, 29);
+            btnDelete.TabIndex = 8;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // btnUp
+            // 
+            btnUp.Location = new Point(1001, 201);
+            btnUp.Name = "btnUp";
+            btnUp.Size = new Size(94, 29);
+            btnUp.TabIndex = 9;
+            btnUp.Text = "Up";
+            btnUp.UseVisualStyleBackColor = true;
+            btnUp.Click += btnUp_Click;
+            // 
+            // btnDown
+            // 
+            btnDown.Location = new Point(1002, 245);
+            btnDown.Name = "btnDown";
+            btnDown.Size = new Size(94, 29);
+            btnDown.TabIndex = 10;
+            btnDown.Text = "Down";
+            btnDown.UseVisualStyleBackColor = true;
+            btnDown.Click += btnDown_Click;
+            // 
+            // btnGenerate
+            // 
+            btnGenerate.Location = new Point(697, 387);
+            btnGenerate.Name = "btnGenerate";
+            btnGenerate.Size = new Size(94, 29);
+            btnGenerate.TabIndex = 11;
+            btnGenerate.Text = "Generate";
+            btnGenerate.UseVisualStyleBackColor = true;
+            // 
+            // btnRename
+            // 
+            btnRename.Location = new Point(597, 387);
+            btnRename.Name = "btnRename";
+            btnRename.Size = new Size(94, 29);
+            btnRename.TabIndex = 12;
+            btnRename.Text = "Rename";
+            btnRename.UseVisualStyleBackColor = true;
+            btnRename.Click += btnRename_Click;
+            // 
+            // FrmMain
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1166, 546);
+            Controls.Add(btnRename);
+            Controls.Add(btnGenerate);
+            Controls.Add(btnDown);
+            Controls.Add(btnUp);
+            Controls.Add(btnDelete);
+            Controls.Add(btnCombine);
+            Controls.Add(btnAdd);
+            Controls.Add(lsbFinalCases);
+            Controls.Add(btnLaws);
+            Controls.Add(btnNormatives);
+            Controls.Add(btnManage);
+            Controls.Add(lsbCases);
+            Controls.Add(btnSearch);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            Name = "FrmMain";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Normative Analysis";
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private Button btnSearch;
+        private ListBox lsbCases;
+        private Button btnManage;
+        private Button btnNormatives;
+        private Button btnLaws;
+        private ListBox lsbFinalCases;
+        private Button btnAdd;
+        private Button btnCombine;
+        private Button btnDelete;
+        private Button btnUp;
+        private Button btnDown;
+        private Button btnGenerate;
+        private Button btnRename;
+    }
+}

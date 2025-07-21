@@ -28,7 +28,8 @@ E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\bin\Debug\net8.0-window
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\bin\Debug\net8.0-windows\AssessmentLibrary.pdb
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.csproj.AssemblyReference.cache
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.FrmLaws.resources
-E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.Normatives.resources
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.FrmMain.resources
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.FrmNormatives.resources
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.csproj.GenerateResource.cache
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.GeneratedMSBuildEditorConfig.editorconfig
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.AssemblyInfoInputs.cache
@@ -41,3 +42,4 @@ E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-window
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.pdb
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.genruntimeconfig.cache
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\ref\PrivacyAssessment.dll
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.FrmAlias.resources

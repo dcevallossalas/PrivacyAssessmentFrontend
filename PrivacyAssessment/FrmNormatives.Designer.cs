@@ -1,6 +1,6 @@
 ﻿namespace PrivacyAssessment
 {
-    partial class Normatives
+    partial class FrmNormatives
     {
         /// <summary>
         ///  Required designer variable.

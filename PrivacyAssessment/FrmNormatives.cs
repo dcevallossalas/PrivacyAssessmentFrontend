@@ -14,11 +14,11 @@ using Document = AssessmentLibrary.AssessmentModel.Document;
 
 namespace PrivacyAssessment
 {
-    public partial class Normatives : Form
+    public partial class FrmNormatives : Form
     {
         private int type = 0;
 
-        public Normatives()
+        public FrmNormatives()
         {
             InitializeComponent();
         }

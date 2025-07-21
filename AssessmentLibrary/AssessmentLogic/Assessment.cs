@@ -13,6 +13,52 @@ namespace AssessmentLibrary.AssessmentLogic
 {
     public class Assessment
     {
+        public static Response getVersion(int id)
+        {
+            string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
+            var client = new RestClient(endpoint);
+            var request = new RestRequest("/getversion/" + id, Method.Get);
+
+            var result = client.ExecuteGet(request);
+
+            if (result.IsSuccessful)
+            {
+                Response response = JsonSerializer.Deserialize<Response>(result.Content);
+                return response;
+            }
+            else
+            {
+                return new Response
+                {
+                    code = -1,
+                    message = "Error. Status Code: " + result.StatusCode + " Status Description: " + result.ErrorMessage
+                };
+            }
+        }
+
+        public static Cases getCases()
+        {
+            string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
+            var client = new RestClient(endpoint);
+            var request = new RestRequest("/getcases", Method.Get);
+
+            var result = client.ExecuteGet(request);
+
+            if (result.IsSuccessful)
+            {
+                Cases cases = JsonSerializer.Deserialize<Cases>(result.Content);
+                return cases;
+            }
+            else
+            {
+                return new Cases
+                {
+                    code = -1,
+                    message = "Error. Status Code: " + result.StatusCode + " Status Description: " + result.ErrorMessage
+                };
+            }
+        }
+
         public static Response createDocument(Document document,string path)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -108,5 +154,7 @@ namespace AssessmentLibrary.AssessmentLogic
                 };
             }
         }
+
+        
     }
 }
