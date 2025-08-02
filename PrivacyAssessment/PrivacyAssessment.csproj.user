@@ -7,6 +7,9 @@
     <Compile Update="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmNormatives.cs">
       <SubType>Form</SubType>
     </Compile>

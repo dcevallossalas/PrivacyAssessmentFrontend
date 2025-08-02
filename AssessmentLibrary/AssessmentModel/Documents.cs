@@ -23,6 +23,12 @@ namespace AssessmentLibrary.AssessmentModel
         public string alias { get; set; }
         public string description { get; set; }
 
+        public int id_extra1 { get; set; }
+
+        public int id_extra2 { get; set; }
+
+        public string gpt { get; set; }
+
         public int docType { get; set; }
 
         public List<Principle> principles { get; set; }

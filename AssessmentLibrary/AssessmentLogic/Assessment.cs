@@ -13,6 +13,54 @@ namespace AssessmentLibrary.AssessmentLogic
 {
     public class Assessment
     {
+        public static Response createCase(Document document)
+        {
+            string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
+            var client = new RestClient(endpoint);
+            var request = new RestRequest("/createcase", Method.Post);
+
+            // Json
+            request.AddParameter("json", JsonSerializer.Serialize(document), ParameterType.GetOrPost);
+
+            RestResponse result = client.Execute(request);
+            if (result.IsSuccessful)
+            {
+                Response response = JsonSerializer.Deserialize<Response>(result.Content);
+                return response;
+            }
+            else
+            {
+                return new Response
+                {
+                    code = -1,
+                    message = "Error. Status Code: " + result.StatusCode + " Status Description: " + result.ErrorMessage
+                };
+            }
+        }
+
+        public static Document getCase(int idNormative, int idLaw)
+        {
+            string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
+            var client = new RestClient(endpoint);
+            var request = new RestRequest("/getcase/" + idNormative + "/" + idLaw, Method.Get);
+
+            var result = client.ExecuteGet(request);
+
+            if (result.IsSuccessful)
+            {
+                Document document = JsonSerializer.Deserialize<Document>(result.Content);
+                return document;
+            }
+            else
+            {
+                return new Document
+                {
+                    code = -1,
+                    message = "Error. Status Code: " + result.StatusCode + " Status Description: " + result.ErrorMessage
+                };
+            }
+        }
+
         public static Response getVersion(int id)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
