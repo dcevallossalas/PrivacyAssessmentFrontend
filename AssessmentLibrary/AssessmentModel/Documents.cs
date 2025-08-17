@@ -29,6 +29,10 @@ namespace AssessmentLibrary.AssessmentModel
 
         public string gpt { get; set; }
 
+        public string gpt_cs { get; set; }
+
+        public string gpt_ncs { get; set; }
+
         public int docType { get; set; }
 
         public List<Principle> principles { get; set; }

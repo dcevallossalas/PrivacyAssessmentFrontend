@@ -41,6 +41,8 @@
             btnDown = new Button();
             btnGenerate = new Button();
             btnRename = new Button();
+            btnDeleteCase = new Button();
+            btnInsertNormative = new Button();
             SuspendLayout();
             // 
             // btnSearch
@@ -123,7 +125,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(1002, 387);
+            btnDelete.Location = new Point(1001, 299);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
             btnDelete.TabIndex = 8;
@@ -133,7 +135,7 @@
             // 
             // btnUp
             // 
-            btnUp.Location = new Point(1001, 201);
+            btnUp.Location = new Point(1001, 163);
             btnUp.Name = "btnUp";
             btnUp.Size = new Size(94, 29);
             btnUp.TabIndex = 9;
@@ -143,7 +145,7 @@
             // 
             // btnDown
             // 
-            btnDown.Location = new Point(1002, 245);
+            btnDown.Location = new Point(1001, 212);
             btnDown.Name = "btnDown";
             btnDown.Size = new Size(94, 29);
             btnDown.TabIndex = 10;
@@ -170,11 +172,33 @@
             btnRename.UseVisualStyleBackColor = true;
             btnRename.Click += btnRename_Click;
             // 
+            // btnDeleteCase
+            // 
+            btnDeleteCase.Location = new Point(323, 436);
+            btnDeleteCase.Name = "btnDeleteCase";
+            btnDeleteCase.Size = new Size(94, 29);
+            btnDeleteCase.TabIndex = 13;
+            btnDeleteCase.Text = "Delete";
+            btnDeleteCase.UseVisualStyleBackColor = true;
+            btnDeleteCase.Click += btnDeleteCase_Click;
+            // 
+            // btnInsertNormative
+            // 
+            btnInsertNormative.Location = new Point(850, 387);
+            btnInsertNormative.Name = "btnInsertNormative";
+            btnInsertNormative.Size = new Size(129, 29);
+            btnInsertNormative.TabIndex = 14;
+            btnInsertNormative.Text = "Insert normative";
+            btnInsertNormative.UseVisualStyleBackColor = true;
+            btnInsertNormative.Click += btnInsertNormative_Click;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1166, 546);
+            Controls.Add(btnInsertNormative);
+            Controls.Add(btnDeleteCase);
             Controls.Add(btnRename);
             Controls.Add(btnGenerate);
             Controls.Add(btnDown);
@@ -193,6 +217,7 @@
             Name = "FrmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Normative Analysis";
+            Load += FrmMain_Load;
             ResumeLayout(false);
         }
 
@@ -211,5 +236,7 @@
         private Button btnDown;
         private Button btnGenerate;
         private Button btnRename;
+        private Button btnDeleteCase;
+        private Button btnInsertNormative;
     }
 }

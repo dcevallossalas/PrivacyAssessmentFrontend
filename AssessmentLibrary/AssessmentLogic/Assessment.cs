@@ -13,6 +13,29 @@ namespace AssessmentLibrary.AssessmentLogic
 {
     public class Assessment
     {
+        public static Response deleteCase(int id)
+        {
+            string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
+            var client = new RestClient(endpoint);
+            var request = new RestRequest("/deletecase/" + id, Method.Delete);
+
+            var result = client.ExecuteDelete(request);
+
+            if (result.IsSuccessful)
+            {
+                Response response = JsonSerializer.Deserialize<Response>(result.Content);
+                return response;
+            }
+            else
+            {
+                return new Response
+                {
+                    code = -1,
+                    message = "Error. Status Code: " + result.StatusCode + " Status Description: " + result.ErrorMessage
+                };
+            }
+        }
+
         public static Response createCase(Document document)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];

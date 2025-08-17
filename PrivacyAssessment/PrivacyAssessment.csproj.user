@@ -4,6 +4,9 @@
     <Compile Update="FrmAlias.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmInsertNormative.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>

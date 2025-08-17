@@ -44,3 +44,4 @@ E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-window
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\ref\PrivacyAssessment.dll
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.FrmAlias.resources
 E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.FrmManagement.resources
+E:\Doctorado\PrivacyAssessmentFrontend\PrivacyAssessment\obj\Debug\net8.0-windows\PrivacyAssessment.FrmInsertNormative.resources

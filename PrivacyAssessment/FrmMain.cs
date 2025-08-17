@@ -30,6 +30,7 @@ namespace PrivacyAssessment
             btnManage.Enabled = false;
             btnAdd.Enabled = false;
             btnCombine.Enabled = false;
+            btnDeleteCase.Enabled = false;
         }
 
         public void setEnable()
@@ -37,6 +38,7 @@ namespace PrivacyAssessment
             btnManage.Enabled = true;
             btnAdd.Enabled = true;
             btnCombine.Enabled = true;
+            btnDeleteCase.Enabled = true;
         }
 
         public void setFinalEnable()
@@ -391,6 +393,146 @@ namespace PrivacyAssessment
         {
             FrmLaws frmLaws = new FrmLaws();
             frmLaws.ShowDialog();
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteCase_Click(object sender, EventArgs e)
+        {
+            int count = lsbCases.SelectedItems.Count;
+
+            if (count > 0)
+            {
+                string message = "Do you want to remove this case of analysis?";
+
+                if (count > 1)
+                    message = "Do you want to remove these cases of analysis?";
+
+                DialogResult result = Confirmation.ShowCustomYesNo(message, "Confirmation", "Yes", "No");
+                List<int> deletes = new List<int>();
+
+                if (result == DialogResult.Yes)
+                {
+                    for (int i = 0; i <= count - 1; i++)
+                    {
+                        Response response = Assessment.deleteCase(lsbCases.SelectedIndex);
+                        if (response.code == 0)
+                        {
+                            deletes.Add(i);
+                        }
+                        else
+                        {
+                            MessageBox.Show(response.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+
+                    for (int j = lsbFinalCases.Items.Count - 1; j >= 0; j--)
+                    {
+                        CaseItem item = (CaseItem)lsbFinalCases.Items[j];
+
+                        if (item.id == 0 && item.subcases != null && item.subcases.Count > 0)
+                        {
+                            foreach (int subcase in item.subcases)
+                            {
+                                if (deletes.Contains(subcase))
+                                {
+                                    lsbFinalCases.Items.RemoveAt(j);
+                                    break;
+                                }
+                            }
+                        }
+                        else if (deletes.Contains(item.id))
+                        {
+                            lsbFinalCases.Items.RemoveAt(j);
+                        }
+                    }
+
+                    for (int k = lsbCases.Items.Count - 1; k >= 0; k--)
+                    {
+                        CaseItem itemOriginal = (CaseItem)lsbCases.Items[k];
+
+                        if (deletes.Contains(itemOriginal.id))
+                            lsbCases.Items.RemoveAt(k);
+                    }
+
+                    if (count == 1)
+                    {
+                        MessageBox.Show("Case of analysis deleted with success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cases of analysis deleted with success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+        }
+
+        private void btnInsertNormative_Click(object sender, EventArgs e)
+        {
+            List<int> addedNormatives = new List<int>();
+
+            for (int i = 0; i <= lsbFinalCases.Items.Count - 1; i++)
+            {
+                CaseItem item = (CaseItem)lsbFinalCases.Items[i];
+
+                if (item.id == 0 && item.id_normative > 0)
+                {
+                    addedNormatives.Add(item.id_normative);
+                }
+            }
+
+            Documents documents = Assessment.getDocuments(0);
+            if (documents.code == 0)
+            {
+                List<Document> normatives = documents.documents;
+
+                if (normatives.Count > 0)
+                {
+                    for (int j = normatives.Count - 1; j >= 0; j--)
+                    {
+                        if (addedNormatives.Contains(normatives[j].id))
+                        {
+                            normatives.RemoveAt(j);
+                        }
+                    }
+
+                    if (normatives.Count > 0)
+                    {
+                        FrmInsertNormative frmInsertNormative = new FrmInsertNormative(normatives);
+
+                        if (frmInsertNormative.ShowDialog() == DialogResult.OK)
+                        {
+                            CaseItem caseItem = new CaseItem
+                            {
+                                id = 0,
+                                id_normative = frmInsertNormative.id_normative,
+                                alias = "Normative",
+                                alias_normative = frmInsertNormative.alias
+                            };
+
+                            lsbFinalCases.Items.Add(caseItem);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("You have already added all possible normatives for analysis", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("There are no available normatives for analysis. Please, insert one", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+            }
+            else
+            {
+                setBlocked();
+                MessageBox.Show(documents.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
