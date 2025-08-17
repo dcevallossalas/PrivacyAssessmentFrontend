@@ -17,6 +17,7 @@ namespace PrivacyAssessment
     {
         public int id_normative;
         public string alias;
+        public string name;
         public List<Document> normatives;
 
         public FrmInsertNormative(List<Document> normatives)
@@ -38,6 +39,7 @@ namespace PrivacyAssessment
                 ComboBoxItem cmbItem = new ComboBoxItem
                 {
                     Value = normative.id,
+                    Name = normative.name,
                     Alias = normative.alias,
                     Text = text
                 };
@@ -50,12 +52,14 @@ namespace PrivacyAssessment
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtAlias.Text))
+            if (!string.IsNullOrEmpty(txtAlias.Text))
             {
                 alias = txtAlias.Text;
-
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             } else
             {
+                txtAlias.Focus();
                 MessageBox.Show("Please, insert a valid alias", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -70,6 +74,8 @@ namespace PrivacyAssessment
             {
                 txtAlias.Text = cmbItem.Alias;
                 alias = cmbItem.Alias;
+                txtName.Text = cmbItem.Name;
+                name = cmbItem.Name;
                 id_normative = id;
                 txtAlias.Focus();
             }

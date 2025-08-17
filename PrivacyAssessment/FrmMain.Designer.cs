@@ -73,6 +73,7 @@
             btnManage.TabIndex = 2;
             btnManage.Text = "Manage";
             btnManage.UseVisualStyleBackColor = true;
+            btnManage.Click += btnManage_Click_1;
             // 
             // btnNormatives
             // 

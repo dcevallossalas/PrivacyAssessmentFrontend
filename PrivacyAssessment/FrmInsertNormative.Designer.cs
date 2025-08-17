@@ -33,6 +33,8 @@
             label1 = new Label();
             txtAlias = new TextBox();
             btnAceptar = new Button();
+            txtName = new TextBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // cmbNormatives
@@ -56,7 +58,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(168, 186);
+            label1.Location = new Point(168, 228);
             label1.Name = "label1";
             label1.Size = new Size(44, 20);
             label1.TabIndex = 12;
@@ -64,7 +66,7 @@
             // 
             // txtAlias
             // 
-            txtAlias.Location = new Point(271, 179);
+            txtAlias.Location = new Point(271, 221);
             txtAlias.Name = "txtAlias";
             txtAlias.Size = new Size(351, 27);
             txtAlias.TabIndex = 13;
@@ -79,11 +81,30 @@
             btnAceptar.UseVisualStyleBackColor = true;
             btnAceptar.Click += btnAceptar_Click;
             // 
+            // txtName
+            // 
+            txtName.Location = new Point(271, 168);
+            txtName.Name = "txtName";
+            txtName.ReadOnly = true;
+            txtName.Size = new Size(351, 27);
+            txtName.TabIndex = 16;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(168, 175);
+            label2.Name = "label2";
+            label2.Size = new Size(52, 20);
+            label2.TabIndex = 15;
+            label2.Text = "Name:";
+            // 
             // FrmInsertNormative
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(739, 397);
+            Controls.Add(txtName);
+            Controls.Add(label2);
             Controls.Add(btnAceptar);
             Controls.Add(txtAlias);
             Controls.Add(label1);
@@ -92,6 +113,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "FrmInsertNormative";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Insert a normative";
             ResumeLayout(false);
             PerformLayout();
@@ -104,5 +126,7 @@
         private Label label1;
         private TextBox txtAlias;
         private Button btnAceptar;
+        private TextBox txtName;
+        private Label label2;
     }
 }

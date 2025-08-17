@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +35,21 @@ namespace AssessmentLibrary.AssessmentModel
 
         public override string ToString()
         {
-            return name + " (" + alias + ") " + "(" + alias_normative + "-" + alias_law + ")";
+            if (id > 0)
+            {
+                return name + " (" + alias + ") " + "(" + alias_normative + "-" + alias_law + ")";
+            }
+            else
+            {
+                if (id_normative > 0)
+                {
+                    return name + " (" + alias + ") (Normative)";
+                }
+                else
+                {
+                    return name + " (" + alias + ") (Compund case)";
+                }
+            }
         }
     }
 }

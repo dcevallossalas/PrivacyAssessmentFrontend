@@ -31,12 +31,14 @@
             lblAlias = new Label();
             txtAlias = new TextBox();
             btnAceptar = new Button();
+            txtName = new TextBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // lblAlias
             // 
             lblAlias.AutoSize = true;
-            lblAlias.Location = new Point(125, 81);
+            lblAlias.Location = new Point(136, 120);
             lblAlias.Name = "lblAlias";
             lblAlias.Size = new Size(44, 20);
             lblAlias.TabIndex = 0;
@@ -44,7 +46,7 @@
             // 
             // txtAlias
             // 
-            txtAlias.Location = new Point(209, 74);
+            txtAlias.Location = new Point(220, 113);
             txtAlias.Name = "txtAlias";
             txtAlias.Size = new Size(359, 27);
             txtAlias.TabIndex = 1;
@@ -59,11 +61,29 @@
             btnAceptar.UseVisualStyleBackColor = true;
             btnAceptar.Click += btnAceptar_Click;
             // 
+            // txtName
+            // 
+            txtName.Location = new Point(221, 57);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(358, 27);
+            txtName.TabIndex = 0;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(128, 60);
+            label2.Name = "label2";
+            label2.Size = new Size(52, 20);
+            label2.TabIndex = 17;
+            label2.Text = "Name:";
+            // 
             // FrmAlias
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(659, 264);
+            Controls.Add(txtName);
+            Controls.Add(label2);
             Controls.Add(btnAceptar);
             Controls.Add(txtAlias);
             Controls.Add(lblAlias);
@@ -82,5 +102,7 @@
         private Label lblAlias;
         private TextBox txtAlias;
         private Button btnAceptar;
+        private TextBox txtName;
+        private Label label2;
     }
 }

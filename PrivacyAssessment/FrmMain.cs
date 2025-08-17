@@ -88,6 +88,7 @@ namespace PrivacyAssessment
             btnDelete.Enabled = false;
             btnUp.Enabled = false;
             btnDown.Enabled = false;
+            btnGenerate.Enabled = false;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -129,6 +130,14 @@ namespace PrivacyAssessment
             if (lsbCases.SelectedIndex != -1)
             {
                 setEnable();
+            }
+            else
+            {
+                if (lsbCases.Items.Count <= 0)
+                {
+                    btnDeleteCase.Enabled = false;
+                    btnManage.Enabled = false;
+                }
             }
         }
 
@@ -271,10 +280,12 @@ namespace PrivacyAssessment
 
                 if (frmAlias.ShowDialog() == DialogResult.OK)
                 {
+                    string name = frmAlias.name;
                     string alias = frmAlias.alias;
 
                     if (!string.IsNullOrEmpty(alias))
                     {
+                        item.name = name;
                         item.alias = alias;
                     }
                 }
@@ -335,7 +346,7 @@ namespace PrivacyAssessment
                 {
                     CaseItem finalItem = (CaseItem)item;
 
-                    if (finalItem.id == 0 && finalItem.subcases.Count == subcases.Count)
+                    if (finalItem.id == 0 && finalItem.subcases != null && finalItem.subcases.Count == subcases.Count)
                     {
                         foreach (int i in finalItem.subcases)
                         {
@@ -354,13 +365,15 @@ namespace PrivacyAssessment
 
                 if (frmAlias.ShowDialog() == DialogResult.OK)
                 {
+                    string name = frmAlias.name;
                     string alias = frmAlias.alias;
+
                     CaseItem caseItem = new CaseItem
                     {
                         id = 0,
                         id_normative = 0,
                         id_law = 0,
-                        name = "Compound analysis",
+                        name = name,
                         alias = alias,
                         alias_normative = "compound",
                         alias_law = "",
@@ -418,10 +431,11 @@ namespace PrivacyAssessment
                 {
                     for (int i = 0; i <= count - 1; i++)
                     {
-                        Response response = Assessment.deleteCase(lsbCases.SelectedIndex);
+                        CaseItem item = (CaseItem)lsbCases.Items[i];
+                        Response response = Assessment.deleteCase(item.id);
                         if (response.code == 0)
                         {
-                            deletes.Add(i);
+                            deletes.Add(item.id);
                         }
                         else
                         {
@@ -467,8 +481,34 @@ namespace PrivacyAssessment
                     {
                         MessageBox.Show("Cases of analysis deleted with success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
+
+                    UpdateControls();
                 }
             }
+        }
+
+        public void UpdateControls()
+        {
+            if (lsbCases.Items.Count <= 0)
+            {
+                btnAdd.Enabled = false;
+                btnCombine.Enabled = false;
+                btnDeleteCase.Enabled = false;
+            }
+            else
+            {
+                lsbCases.SelectedIndex = 0;
+            }
+
+            if (lsbFinalCases.Items.Count <= 0)
+            {
+                btnGenerate.Enabled = false;
+            }
+            else
+            {
+                lsbFinalCases.SelectedIndex = 0;
+            }
+
         }
 
         private void btnInsertNormative_Click(object sender, EventArgs e)
@@ -510,7 +550,8 @@ namespace PrivacyAssessment
                             {
                                 id = 0,
                                 id_normative = frmInsertNormative.id_normative,
-                                alias = "Normative",
+                                name = frmInsertNormative.name,
+                                alias = frmInsertNormative.alias,
                                 alias_normative = frmInsertNormative.alias
                             };
 
@@ -533,6 +574,17 @@ namespace PrivacyAssessment
                 setBlocked();
                 MessageBox.Show(documents.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnManage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnManage_Click_1(object sender, EventArgs e)
+        {
+            FrmManagement frmManage = new FrmManagement();
+            frmManage.ShowDialog();
         }
     }
 }

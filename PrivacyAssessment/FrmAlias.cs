@@ -13,18 +13,30 @@ namespace PrivacyAssessment
     public partial class FrmAlias : Form
     {
         public string alias = string.Empty;
+        public string name = string.Empty;
 
         public FrmAlias()
         {
             InitializeComponent();
-            txtAlias.Focus();
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            alias = txtAlias.Text;
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            if (string.IsNullOrEmpty(txtName.Text))
+            {
+                MessageBox.Show("Please, insert a valid name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            } else if (string.IsNullOrEmpty(txtAlias.Text))
+            {
+                MessageBox.Show("Please, insert a valid alias", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            } else
+            {
+                name = txtName.Text;
+                alias = txtAlias.Text;
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
     }
 }

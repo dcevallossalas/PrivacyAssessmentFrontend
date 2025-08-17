@@ -6,7 +6,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -76,8 +75,9 @@ namespace PrivacyAssessment
             txtAlias.ReadOnly = false;
             txtDescription.Text = string.Empty;
             txtDescription.ReadOnly = false;
+            txtGPT.Text = string.Empty;
 
-            btnCreate.Enabled = false;
+            btnCreate.Enabled = true;
         }
 
         private void loadData()
@@ -167,19 +167,50 @@ namespace PrivacyAssessment
             int idNormative = 0;
             try
             {
-                idNormative = int.Parse((cmbNormatives.SelectedItem as ComboBoxItem).Value.ToString());
+                if (cmbNormatives.SelectedIndex >= 0)
+                    idNormative = int.Parse((cmbNormatives.SelectedItem as ComboBoxItem).Value.ToString());
             }
             catch (Exception) { }
 
             int idLaw = 0;
             try
             {
-                idLaw = int.Parse((cmbLaws.SelectedItem as ComboBoxItem).Value.ToString());
+                if (cmbLaws.SelectedIndex >= 0)
+                    idLaw = int.Parse((cmbLaws.SelectedItem as ComboBoxItem).Value.ToString());
             }
             catch (Exception) { }
 
             if (idNormative > 0 && idLaw > 0)
             {
+                Document normative = Assessment.getDocument(0, idNormative);
+                if (normative.code == 0)
+                {
+                    txtIdNormative.Text = normative.id.ToString();
+                    txtNameNormative.Text = normative.name;
+                    txtAliasNormative.Text  = normative.alias;
+                    txtDescriptionNormative.Text = normative.description;
+                } else
+                {
+                    setBlocked();
+                    MessageBox.Show(normative.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                Document law = Assessment.getDocument(0, idLaw);
+                if (law.code == 0)
+                {
+                    txtIdLaw.Text = law.id.ToString();
+                    txtNameLaw.Text = law.name;
+                    txtAliasLaw.Text = law.alias;
+                    txtDescriptionLaw.Text = law.description;
+                }
+                else
+                {
+                    setBlocked();
+                    MessageBox.Show(law.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 Document document = Assessment.getCase(idNormative, idLaw);
 
                 if (document.code == 0)
@@ -208,7 +239,7 @@ namespace PrivacyAssessment
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNameLaw.Text))
+            if (string.IsNullOrEmpty(txtName.Text))
             {
                 MessageBox.Show("Specify the name of the case", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -241,6 +272,8 @@ namespace PrivacyAssessment
             Response response = Assessment.createCase(document);
             if (response.code == 0)
             {
+                setModifyMode();
+
                 MessageBox.Show("Case created with success!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
