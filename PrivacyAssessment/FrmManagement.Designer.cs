@@ -77,15 +77,15 @@
             grbComboBoxes.Controls.Add(cmbNormatives);
             grbComboBoxes.Controls.Add(lblCmbsLaws);
             grbComboBoxes.Controls.Add(lblCmbNormatives);
-            grbComboBoxes.Location = new Point(234, 33);
+            grbComboBoxes.Location = new Point(194, 38);
             grbComboBoxes.Name = "grbComboBoxes";
-            grbComboBoxes.Size = new Size(588, 125);
+            grbComboBoxes.Size = new Size(1032, 125);
             grbComboBoxes.TabIndex = 0;
             grbComboBoxes.TabStop = false;
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(464, 22);
+            btnSearch.Location = new Point(863, 29);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(94, 29);
             btnSearch.TabIndex = 4;
@@ -98,7 +98,7 @@
             cmbLaws.FormattingEnabled = true;
             cmbLaws.Location = new Point(185, 74);
             cmbLaws.Name = "cmbLaws";
-            cmbLaws.Size = new Size(260, 28);
+            cmbLaws.Size = new Size(646, 28);
             cmbLaws.TabIndex = 3;
             cmbLaws.SelectedIndexChanged += cmbLaws_SelectedIndexChanged;
             // 
@@ -107,7 +107,7 @@
             cmbNormatives.FormattingEnabled = true;
             cmbNormatives.Location = new Point(186, 23);
             cmbNormatives.Name = "cmbNormatives";
-            cmbNormatives.Size = new Size(259, 28);
+            cmbNormatives.Size = new Size(645, 28);
             cmbNormatives.TabIndex = 2;
             cmbNormatives.SelectedIndexChanged += cmbNormatives_SelectedIndexChanged;
             // 
@@ -141,7 +141,7 @@
             grbNormativeInformation.Controls.Add(lblNameNormative);
             grbNormativeInformation.Location = new Point(62, 198);
             grbNormativeInformation.Name = "grbNormativeInformation";
-            grbNormativeInformation.Size = new Size(453, 291);
+            grbNormativeInformation.Size = new Size(725, 291);
             grbNormativeInformation.TabIndex = 1;
             grbNormativeInformation.TabStop = false;
             grbNormativeInformation.Text = "Normative information";
@@ -152,7 +152,7 @@
             txtDescriptionNormative.Multiline = true;
             txtDescriptionNormative.Name = "txtDescriptionNormative";
             txtDescriptionNormative.ReadOnly = true;
-            txtDescriptionNormative.Size = new Size(308, 96);
+            txtDescriptionNormative.Size = new Size(546, 96);
             txtDescriptionNormative.TabIndex = 6;
             // 
             // txtAliasNormative
@@ -160,7 +160,7 @@
             txtAliasNormative.Location = new Point(137, 135);
             txtAliasNormative.Name = "txtAliasNormative";
             txtAliasNormative.ReadOnly = true;
-            txtAliasNormative.Size = new Size(238, 27);
+            txtAliasNormative.Size = new Size(541, 27);
             txtAliasNormative.TabIndex = 5;
             // 
             // txtNameNormative
@@ -168,7 +168,7 @@
             txtNameNormative.Location = new Point(137, 88);
             txtNameNormative.Name = "txtNameNormative";
             txtNameNormative.ReadOnly = true;
-            txtNameNormative.Size = new Size(238, 27);
+            txtNameNormative.Size = new Size(541, 27);
             txtNameNormative.TabIndex = 4;
             // 
             // txtIdNormative
@@ -176,7 +176,7 @@
             txtIdNormative.Location = new Point(137, 42);
             txtIdNormative.Name = "txtIdNormative";
             txtIdNormative.ReadOnly = true;
-            txtIdNormative.Size = new Size(238, 27);
+            txtIdNormative.Size = new Size(541, 27);
             txtIdNormative.TabIndex = 3;
             // 
             // lblDescriptionNormative
@@ -227,7 +227,7 @@
             grbLawInformation.Controls.Add(lblAliasLaw);
             grbLawInformation.Location = new Point(62, 513);
             grbLawInformation.Name = "grbLawInformation";
-            grbLawInformation.Size = new Size(453, 289);
+            grbLawInformation.Size = new Size(725, 289);
             grbLawInformation.TabIndex = 2;
             grbLawInformation.TabStop = false;
             grbLawInformation.Text = "Law information";
@@ -238,7 +238,7 @@
             txtDescriptionLaw.Multiline = true;
             txtDescriptionLaw.Name = "txtDescriptionLaw";
             txtDescriptionLaw.ReadOnly = true;
-            txtDescriptionLaw.Size = new Size(308, 96);
+            txtDescriptionLaw.Size = new Size(546, 96);
             txtDescriptionLaw.TabIndex = 10;
             // 
             // lblDescriptionLaw
@@ -255,7 +255,7 @@
             txtAliasLaw.Location = new Point(137, 133);
             txtAliasLaw.Name = "txtAliasLaw";
             txtAliasLaw.ReadOnly = true;
-            txtAliasLaw.Size = new Size(238, 27);
+            txtAliasLaw.Size = new Size(541, 27);
             txtAliasLaw.TabIndex = 9;
             // 
             // lblIdLaw
@@ -272,7 +272,7 @@
             txtNameLaw.Location = new Point(137, 93);
             txtNameLaw.Name = "txtNameLaw";
             txtNameLaw.ReadOnly = true;
-            txtNameLaw.Size = new Size(238, 27);
+            txtNameLaw.Size = new Size(541, 27);
             txtNameLaw.TabIndex = 8;
             // 
             // lblNameLaw
@@ -289,7 +289,7 @@
             txtIdLaw.Location = new Point(137, 50);
             txtIdLaw.Name = "txtIdLaw";
             txtIdLaw.ReadOnly = true;
-            txtIdLaw.Size = new Size(238, 27);
+            txtIdLaw.Size = new Size(541, 27);
             txtIdLaw.TabIndex = 7;
             // 
             // lblAliasLaw
@@ -314,7 +314,7 @@
             grbCase.Controls.Add(lblAlias);
             grbCase.Controls.Add(lblId);
             grbCase.Controls.Add(lblDescription);
-            grbCase.Location = new Point(579, 247);
+            grbCase.Location = new Point(898, 240);
             grbCase.Name = "grbCase";
             grbCase.Size = new Size(452, 507);
             grbCase.TabIndex = 3;
@@ -421,7 +421,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1066, 829);
+            ClientSize = new Size(1430, 829);
             Controls.Add(grbCase);
             Controls.Add(grbLawInformation);
             Controls.Add(grbNormativeInformation);

@@ -61,13 +61,13 @@
             lsbCases.Location = new Point(76, 144);
             lsbCases.Name = "lsbCases";
             lsbCases.SelectionMode = SelectionMode.MultiExtended;
-            lsbCases.Size = new Size(341, 184);
+            lsbCases.Size = new Size(434, 184);
             lsbCases.TabIndex = 1;
             lsbCases.SelectedIndexChanged += lsbCases_SelectedIndexChanged;
             // 
             // btnManage
             // 
-            btnManage.Location = new Point(323, 387);
+            btnManage.Location = new Point(408, 387);
             btnManage.Name = "btnManage";
             btnManage.Size = new Size(94, 29);
             btnManage.TabIndex = 2;
@@ -98,7 +98,7 @@
             // lsbFinalCases
             // 
             lsbFinalCases.FormattingEnabled = true;
-            lsbFinalCases.Location = new Point(597, 144);
+            lsbFinalCases.Location = new Point(710, 144);
             lsbFinalCases.Name = "lsbFinalCases";
             lsbFinalCases.Size = new Size(382, 184);
             lsbFinalCases.TabIndex = 5;
@@ -106,7 +106,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(465, 201);
+            btnAdd.Location = new Point(578, 201);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(94, 29);
             btnAdd.TabIndex = 6;
@@ -116,7 +116,7 @@
             // 
             // btnCombine
             // 
-            btnCombine.Location = new Point(465, 254);
+            btnCombine.Location = new Point(578, 254);
             btnCombine.Name = "btnCombine";
             btnCombine.Size = new Size(94, 29);
             btnCombine.TabIndex = 7;
@@ -126,7 +126,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(1001, 299);
+            btnDelete.Location = new Point(1114, 299);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
             btnDelete.TabIndex = 8;
@@ -136,7 +136,7 @@
             // 
             // btnUp
             // 
-            btnUp.Location = new Point(1001, 163);
+            btnUp.Location = new Point(1114, 163);
             btnUp.Name = "btnUp";
             btnUp.Size = new Size(94, 29);
             btnUp.TabIndex = 9;
@@ -146,7 +146,7 @@
             // 
             // btnDown
             // 
-            btnDown.Location = new Point(1001, 212);
+            btnDown.Location = new Point(1114, 212);
             btnDown.Name = "btnDown";
             btnDown.Size = new Size(94, 29);
             btnDown.TabIndex = 10;
@@ -156,7 +156,7 @@
             // 
             // btnGenerate
             // 
-            btnGenerate.Location = new Point(697, 387);
+            btnGenerate.Location = new Point(810, 387);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(94, 29);
             btnGenerate.TabIndex = 11;
@@ -165,7 +165,7 @@
             // 
             // btnRename
             // 
-            btnRename.Location = new Point(597, 387);
+            btnRename.Location = new Point(710, 387);
             btnRename.Name = "btnRename";
             btnRename.Size = new Size(94, 29);
             btnRename.TabIndex = 12;
@@ -175,7 +175,7 @@
             // 
             // btnDeleteCase
             // 
-            btnDeleteCase.Location = new Point(323, 436);
+            btnDeleteCase.Location = new Point(408, 436);
             btnDeleteCase.Name = "btnDeleteCase";
             btnDeleteCase.Size = new Size(94, 29);
             btnDeleteCase.TabIndex = 13;
@@ -185,7 +185,7 @@
             // 
             // btnInsertNormative
             // 
-            btnInsertNormative.Location = new Point(850, 387);
+            btnInsertNormative.Location = new Point(963, 387);
             btnInsertNormative.Name = "btnInsertNormative";
             btnInsertNormative.Size = new Size(129, 29);
             btnInsertNormative.TabIndex = 14;
@@ -197,7 +197,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1166, 546);
+            ClientSize = new Size(1269, 546);
             Controls.Add(btnInsertNormative);
             Controls.Add(btnDeleteCase);
             Controls.Add(btnRename);

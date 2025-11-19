@@ -124,22 +124,22 @@ namespace PrivacyAssessment
 
                 cmbLaws.Items.Clear();
                 cmbLaws.Text = string.Empty;
-                string text;
+                string text1;
 
                 foreach (Document law in laws)
                 {
                     if (law.id == 0)
-                        text = law.name;
+                        text1 = law.name;
                     else
-                        text = law.name + "(" + law.alias + ")";
+                        text1 = law.name + "(" + law.alias + ")";
 
-                    ComboBoxItem cmbItem = new ComboBoxItem
+                    ComboBoxItem cmbItem1 = new ComboBoxItem
                     {
                         Value = law.id,
-                        Text = text
+                        Text = text1
                     };
 
-                    cmbLaws.Items.Add(cmbItem);
+                    cmbLaws.Items.Add(cmbItem1);
                 }
 
                 cmbLaws.SelectedIndex = 0;
@@ -196,7 +196,7 @@ namespace PrivacyAssessment
                     return;
                 }
 
-                Document law = Assessment.getDocument(0, idLaw);
+                Document law = Assessment.getDocument(1, idLaw);
                 if (law.code == 0)
                 {
                     txtIdLaw.Text = law.id.ToString();
