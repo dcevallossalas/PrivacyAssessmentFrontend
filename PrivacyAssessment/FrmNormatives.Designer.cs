@@ -62,9 +62,9 @@
             // txtNameNormative
             // 
             txtNameNormative.Location = new Point(143, 51);
-            txtNameNormative.MaxLength = 50;
+            txtNameNormative.MaxLength = 500;
             txtNameNormative.Name = "txtNameNormative";
-            txtNameNormative.Size = new Size(466, 27);
+            txtNameNormative.Size = new Size(582, 27);
             txtNameNormative.TabIndex = 0;
             // 
             // lblName
@@ -78,7 +78,7 @@
             // 
             // btnLoadNormative
             // 
-            btnLoadNormative.Location = new Point(176, 457);
+            btnLoadNormative.Location = new Point(355, 457);
             btnLoadNormative.Name = "btnLoadNormative";
             btnLoadNormative.Size = new Size(186, 65);
             btnLoadNormative.TabIndex = 7;
@@ -98,14 +98,15 @@
             // txtPathNormative
             // 
             txtPathNormative.Location = new Point(125, 413);
+            txtPathNormative.MaxLength = 64767;
             txtPathNormative.Name = "txtPathNormative";
             txtPathNormative.ReadOnly = true;
-            txtPathNormative.Size = new Size(393, 27);
+            txtPathNormative.Size = new Size(600, 27);
             txtPathNormative.TabIndex = 4;
             // 
             // btnFindNormative
             // 
-            btnFindNormative.Location = new Point(535, 413);
+            btnFindNormative.Location = new Point(762, 416);
             btnFindNormative.Name = "btnFindNormative";
             btnFindNormative.Size = new Size(94, 29);
             btnFindNormative.TabIndex = 6;
@@ -127,13 +128,13 @@
             cmbNormatives.FormattingEnabled = true;
             cmbNormatives.Location = new Point(122, 38);
             cmbNormatives.Name = "cmbNormatives";
-            cmbNormatives.Size = new Size(351, 28);
+            cmbNormatives.Size = new Size(603, 28);
             cmbNormatives.TabIndex = 9;
             cmbNormatives.SelectedIndexChanged += cmbNormatives_SelectedIndexChanged;
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(499, 38);
+            btnSearch.Location = new Point(762, 33);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(94, 29);
             btnSearch.TabIndex = 10;
@@ -153,8 +154,9 @@
             // txtAlias
             // 
             txtAlias.Location = new Point(143, 87);
+            txtAlias.MaxLength = 500;
             txtAlias.Name = "txtAlias";
-            txtAlias.Size = new Size(219, 27);
+            txtAlias.Size = new Size(582, 27);
             txtAlias.TabIndex = 1;
             // 
             // lblDescription
@@ -169,10 +171,11 @@
             // txtDescription
             // 
             txtDescription.Location = new Point(143, 126);
+            txtDescription.MaxLength = 5000;
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
             txtDescription.ScrollBars = ScrollBars.Vertical;
-            txtDescription.Size = new Size(466, 84);
+            txtDescription.Size = new Size(582, 84);
             txtDescription.TabIndex = 2;
             txtDescription.KeyPress += txtDescription_KeyPress;
             // 
@@ -181,9 +184,9 @@
             gbNormatives.Controls.Add(cmbNormatives);
             gbNormatives.Controls.Add(lblNormatives);
             gbNormatives.Controls.Add(btnSearch);
-            gbNormatives.Location = new Point(126, 12);
+            gbNormatives.Location = new Point(70, 12);
             gbNormatives.Name = "gbNormatives";
-            gbNormatives.Size = new Size(614, 100);
+            gbNormatives.Size = new Size(876, 100);
             gbNormatives.TabIndex = 13;
             gbNormatives.TabStop = false;
             // 
@@ -230,13 +233,13 @@
             groupBox1.Controls.Add(lblDescription);
             groupBox1.Location = new Point(70, 118);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(751, 540);
+            groupBox1.Size = new Size(876, 540);
             groupBox1.TabIndex = 16;
             groupBox1.TabStop = false;
             // 
             // btnDeleteCategory
             // 
-            btnDeleteCategory.Location = new Point(598, 323);
+            btnDeleteCategory.Location = new Point(762, 325);
             btnDeleteCategory.Name = "btnDeleteCategory";
             btnDeleteCategory.Size = new Size(94, 29);
             btnDeleteCategory.TabIndex = 23;
@@ -259,7 +262,7 @@
             lsbCategories.FormattingEnabled = true;
             lsbCategories.Location = new Point(143, 283);
             lsbCategories.Name = "lsbCategories";
-            lsbCategories.Size = new Size(428, 104);
+            lsbCategories.Size = new Size(582, 104);
             lsbCategories.TabIndex = 21;
             lsbCategories.SelectedIndexChanged += lsbCategories_SelectedIndexChanged;
             // 
@@ -293,6 +296,7 @@
             // txtCategoryTo
             // 
             txtCategoryTo.Location = new Point(484, 234);
+            txtCategoryTo.MaxLength = 3;
             txtCategoryTo.Name = "txtCategoryTo";
             txtCategoryTo.Size = new Size(125, 27);
             txtCategoryTo.TabIndex = 17;
@@ -301,6 +305,7 @@
             // txtCategoryFrom
             // 
             txtCategoryFrom.Location = new Point(340, 232);
+            txtCategoryFrom.MaxLength = 3;
             txtCategoryFrom.Name = "txtCategoryFrom";
             txtCategoryFrom.Size = new Size(100, 27);
             txtCategoryFrom.TabIndex = 16;
@@ -309,6 +314,7 @@
             // txtPrinciple
             // 
             txtPrinciple.Location = new Point(142, 232);
+            txtPrinciple.MaxLength = 3;
             txtPrinciple.Name = "txtPrinciple";
             txtPrinciple.Size = new Size(69, 27);
             txtPrinciple.TabIndex = 15;
@@ -316,24 +322,24 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(424, 457);
+            btnDelete.Location = new Point(762, 473);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(94, 65);
+            btnDelete.Size = new Size(94, 33);
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
             // 
-            // Normatives
+            // FrmNormatives
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(892, 710);
+            ClientSize = new Size(1010, 710);
             Controls.Add(groupBox1);
             Controls.Add(gbNormatives);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
-            Name = "Normatives";
+            Name = "FrmNormatives";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Normatives";
             Load += Normatives_Load;

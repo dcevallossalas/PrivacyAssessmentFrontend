@@ -17,6 +17,7 @@ namespace PrivacyAssessment
     public partial class FrmNormatives : Form
     {
         private int type = 0;
+        public List<int> deletes = new List<int>();
 
         public FrmNormatives()
         {
@@ -215,7 +216,7 @@ namespace PrivacyAssessment
                     if (normative.id == 0)
                         text = normative.name;
                     else
-                        text = normative.name + "(" + normative.alias + ")";
+                        text = normative.name + " (" + normative.alias + ")";
 
                     ComboBoxItem cmbItem = new ComboBoxItem
                     {
@@ -368,6 +369,7 @@ namespace PrivacyAssessment
                 Response response = Assessment.deleteDocument(type, int.Parse(txtId.Text));
                 if (response.code == 0)
                 {
+                    deletes.Add(int.Parse(txtId.Text));
                     MessageBox.Show("Normative deleted with success", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadNormatives(0);
                 }

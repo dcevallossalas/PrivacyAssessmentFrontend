@@ -16,6 +16,9 @@
     <Compile Update="FrmNormatives.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="FrmNormatives.resx">

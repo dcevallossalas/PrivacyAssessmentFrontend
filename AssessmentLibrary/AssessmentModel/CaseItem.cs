@@ -32,6 +32,8 @@ namespace AssessmentLibrary.AssessmentModel
         public int version_ncs { get; set; }
 
         public List<int> subcases { get; set; }
+        public List<int> subnormatives { get; set; }
+        public List<int> sublaws { get; set; }
 
         public override string ToString()
         {

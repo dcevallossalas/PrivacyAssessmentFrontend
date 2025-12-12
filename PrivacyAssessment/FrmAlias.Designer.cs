@@ -93,6 +93,7 @@
             Name = "FrmAlias";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Insert a new alias";
+            Load += FrmAlias_Load;
             ResumeLayout(false);
             PerformLayout();
         }

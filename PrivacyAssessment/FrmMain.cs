@@ -127,16 +127,18 @@ namespace PrivacyAssessment
 
         private void lsbCases_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (lsbCases.SelectedIndex != -1)
+            if (lsbCases.SelectedIndex != -1 && lsbCases.Items.Count > 0)
             {
                 setEnable();
             }
             else
             {
-                if (lsbCases.Items.Count <= 0)
+                if (lsbCases.SelectedIndex == -1 || lsbCases.Items.Count <= 0)
                 {
                     btnDeleteCase.Enabled = false;
                     btnManage.Enabled = false;
+                    btnAdd.Enabled = false;
+                    btnCombine.Enabled = false;
                 }
             }
         }
@@ -276,7 +278,7 @@ namespace PrivacyAssessment
                 int index = lsbFinalCases.SelectedIndex;
                 CaseItem item = (CaseItem)lsbFinalCases.Items[index];
 
-                FrmAlias frmAlias = new FrmAlias();
+                FrmAlias frmAlias = new FrmAlias(item);
 
                 if (frmAlias.ShowDialog() == DialogResult.OK)
                 {
@@ -303,6 +305,8 @@ namespace PrivacyAssessment
                 var items = lsbCases.SelectedItems;
                 List<string> notAnalyzed = new List<string>();
                 List<int> subcases = new List<int>();
+                List<int> subnormatives = new List<int>();
+                List<int> sublaws = new List<int>();
 
                 // Check GPT generation
                 foreach (var item in items)
@@ -310,6 +314,16 @@ namespace PrivacyAssessment
                     CaseItem caseItem = (CaseItem)item;
                     Response response = itemWasAnalyzed(caseItem.id);
                     subcases.Add(caseItem.id);
+
+                    if (!subnormatives.Contains(caseItem.id_normative))
+                    {
+                        subnormatives.Add(caseItem.id_normative);
+                    }
+
+                    if (!sublaws.Contains(caseItem.id_law))
+                    {
+                        sublaws.Add(caseItem.id_law);
+                    }
 
                     if (response.code == 0)
                     {
@@ -377,7 +391,9 @@ namespace PrivacyAssessment
                         alias = alias,
                         alias_normative = "compound",
                         alias_law = "",
-                        subcases = subcases
+                        subcases = subcases,
+                        subnormatives = subnormatives,
+                        sublaws = sublaws
                     };
 
                     lsbFinalCases.Items.Add(caseItem);
@@ -400,12 +416,74 @@ namespace PrivacyAssessment
         {
             FrmNormatives frmNormatives = new FrmNormatives();
             frmNormatives.ShowDialog();
+            if (frmNormatives.deletes.Count > 0)
+            {
+                for (int j = lsbFinalCases.Items.Count - 1; j >= 0; j--)
+                {
+                    CaseItem item = (CaseItem)lsbFinalCases.Items[j];
+
+                    if (item.id_normative == 0 && item.subnormatives != null && item.subnormatives.Count > 0)
+                    {
+                        foreach (int subnormative in item.subnormatives)
+                        {
+                            if (frmNormatives.deletes.Contains(subnormative))
+                            {
+                                lsbFinalCases.Items.RemoveAt(j);
+                                break;
+                            }
+                        }
+                    }
+                    else if (item.id_normative > 0 && frmNormatives.deletes.Contains(item.id_normative))
+                    {
+                        lsbFinalCases.Items.RemoveAt(j);
+                    }
+                }
+
+                for (int k = lsbCases.Items.Count - 1; k >= 0; k--)
+                {
+                    CaseItem itemOriginal = (CaseItem)lsbCases.Items[k];
+
+                    if (frmNormatives.deletes.Contains(itemOriginal.id_normative))
+                        lsbCases.Items.RemoveAt(k);
+                }
+            }
         }
 
         private void btnLaws_Click(object sender, EventArgs e)
         {
             FrmLaws frmLaws = new FrmLaws();
             frmLaws.ShowDialog();
+            if (frmLaws.deletes.Count > 0)
+            {
+                for (int j = lsbFinalCases.Items.Count - 1; j >= 0; j--)
+                {
+                    CaseItem item = (CaseItem)lsbFinalCases.Items[j];
+
+                    if (item.id_law == 0 && item.sublaws != null && item.sublaws.Count > 0)
+                    {
+                        foreach (int sublaw in item.sublaws)
+                        {
+                            if (frmLaws.deletes.Contains(sublaw))
+                            {
+                                lsbFinalCases.Items.RemoveAt(j);
+                                break;
+                            }
+                        }
+                    }
+                    else if (item.id_law > 0 && frmLaws.deletes.Contains(item.id_law))
+                    {
+                        lsbFinalCases.Items.RemoveAt(j);
+                    }
+                }
+
+                for (int k = lsbCases.Items.Count - 1; k >= 0; k--)
+                {
+                    CaseItem itemOriginal = (CaseItem)lsbCases.Items[k];
+
+                    if (frmLaws.deletes.Contains(itemOriginal.id_law))
+                        lsbCases.Items.RemoveAt(k);
+                }
+            }
         }
 
         private void FrmMain_Load(object sender, EventArgs e)

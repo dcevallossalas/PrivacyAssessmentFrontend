@@ -96,7 +96,7 @@ namespace PrivacyAssessment
                     if (normative.id == 0)
                         text = normative.name;
                     else
-                        text = normative.name + "(" + normative.alias + ")";
+                        text = normative.name + " (" + normative.alias + ")";
 
                     ComboBoxItem cmbItem = new ComboBoxItem
                     {
@@ -131,7 +131,7 @@ namespace PrivacyAssessment
                     if (law.id == 0)
                         text1 = law.name;
                     else
-                        text1 = law.name + "(" + law.alias + ")";
+                        text1 = law.name + " (" + law.alias + ")";
 
                     ComboBoxItem cmbItem1 = new ComboBoxItem
                     {

@@ -55,7 +55,7 @@
             txtNameLaw.Location = new Point(143, 51);
             txtNameLaw.MaxLength = 50;
             txtNameLaw.Name = "txtNameLaw";
-            txtNameLaw.Size = new Size(466, 27);
+            txtNameLaw.Size = new Size(714, 27);
             txtNameLaw.TabIndex = 0;
             // 
             // lblName
@@ -91,12 +91,12 @@
             txtPathLaw.Location = new Point(143, 275);
             txtPathLaw.Name = "txtPathLaw";
             txtPathLaw.ReadOnly = true;
-            txtPathLaw.Size = new Size(393, 27);
+            txtPathLaw.Size = new Size(714, 27);
             txtPathLaw.TabIndex = 4;
             // 
             // btnFindLaw
             // 
-            btnFindLaw.Location = new Point(553, 275);
+            btnFindLaw.Location = new Point(863, 273);
             btnFindLaw.Name = "btnFindLaw";
             btnFindLaw.Size = new Size(94, 29);
             btnFindLaw.TabIndex = 6;
@@ -118,13 +118,13 @@
             cmbLaws.FormattingEnabled = true;
             cmbLaws.Location = new Point(122, 38);
             cmbLaws.Name = "cmbLaws";
-            cmbLaws.Size = new Size(351, 28);
+            cmbLaws.Size = new Size(679, 28);
             cmbLaws.TabIndex = 9;
             cmbLaws.SelectedIndexChanged += cmbLaws_SelectedIndexChanged;
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(499, 38);
+            btnSearch.Location = new Point(807, 38);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(94, 29);
             btnSearch.TabIndex = 10;
@@ -145,7 +145,7 @@
             // 
             txtAlias.Location = new Point(143, 87);
             txtAlias.Name = "txtAlias";
-            txtAlias.Size = new Size(219, 27);
+            txtAlias.Size = new Size(714, 27);
             txtAlias.TabIndex = 1;
             // 
             // lblDescription
@@ -163,7 +163,7 @@
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
             txtDescription.ScrollBars = ScrollBars.Vertical;
-            txtDescription.Size = new Size(466, 84);
+            txtDescription.Size = new Size(714, 84);
             txtDescription.TabIndex = 2;
             txtDescription.KeyPress += txtDescription_KeyPress;
             // 
@@ -174,7 +174,7 @@
             gbNormatives.Controls.Add(btnSearch);
             gbNormatives.Location = new Point(126, 12);
             gbNormatives.Name = "gbNormatives";
-            gbNormatives.Size = new Size(614, 100);
+            gbNormatives.Size = new Size(930, 100);
             gbNormatives.TabIndex = 13;
             gbNormatives.TabStop = false;
             // 
@@ -212,15 +212,15 @@
             groupBox1.Controls.Add(lblDescription);
             groupBox1.Location = new Point(70, 118);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(751, 412);
+            groupBox1.Size = new Size(986, 412);
             groupBox1.TabIndex = 16;
             groupBox1.TabStop = false;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(442, 319);
+            btnDelete.Location = new Point(863, 334);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(94, 65);
+            btnDelete.Size = new Size(94, 35);
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
@@ -230,7 +230,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(892, 559);
+            ClientSize = new Size(1113, 559);
             Controls.Add(groupBox1);
             Controls.Add(gbNormatives);
             FormBorderStyle = FormBorderStyle.FixedDialog;
