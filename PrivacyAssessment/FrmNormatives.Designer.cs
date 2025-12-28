@@ -55,6 +55,7 @@
             txtCategoryFrom = new TextBox();
             txtPrinciple = new TextBox();
             btnDelete = new Button();
+            btnView = new Button();
             gbNormatives.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -209,6 +210,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(btnView);
             groupBox1.Controls.Add(btnDeleteCategory);
             groupBox1.Controls.Add(btnAddCategory);
             groupBox1.Controls.Add(lsbCategories);
@@ -330,6 +332,16 @@
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
             // 
+            // btnView
+            // 
+            btnView.Location = new Point(762, 181);
+            btnView.Name = "btnView";
+            btnView.Size = new Size(94, 29);
+            btnView.TabIndex = 17;
+            btnView.Text = "View";
+            btnView.UseVisualStyleBackColor = true;
+            btnView.Click += btnView_Click;
+            // 
             // FrmNormatives
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -379,5 +391,6 @@
         private Label lblCategoryTo;
         private Button btnAddCategory;
         private Button btnDeleteCategory;
+        private Button btnView;
     }
 }

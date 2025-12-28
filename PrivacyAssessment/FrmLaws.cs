@@ -101,6 +101,7 @@ namespace PrivacyAssessment
             btnLoadLaw.Enabled = false;
             btnFindLaw.Enabled = false;
             btnDelete.Enabled = false;
+            btnView.Enabled = false;
             txtPathLaw.Text = string.Empty;
             txtPathLaw.ReadOnly = true;
             txtNameLaw.Text = string.Empty;
@@ -118,6 +119,7 @@ namespace PrivacyAssessment
             btnFindLaw.Enabled = true;
             btnLoadLaw.Enabled = true;
             btnDelete.Enabled = false;
+            btnView.Enabled = false;
             txtPathLaw.Text = string.Empty;
             txtPathLaw.ReadOnly = true;
             txtNameLaw.Text = string.Empty;
@@ -137,6 +139,7 @@ namespace PrivacyAssessment
             btnFindLaw.Enabled = false;
             btnLoadLaw.Enabled = false;
             btnDelete.Enabled = true;
+            btnView.Enabled = true;
             txtPathLaw.Text = string.Empty;
             txtPathLaw.ReadOnly = true;
             txtNameLaw.ReadOnly = true;
@@ -247,6 +250,21 @@ namespace PrivacyAssessment
             if (char.IsControl(e.KeyChar) && e.KeyChar != (char)Keys.Back)
             {
                 e.Handled = true;
+            }
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            Response response = Assessment.generateView(1, 0, int.Parse(txtId.Text));
+            if (response.code == 0)
+            {
+                FrmView frmView = new FrmView(response.text);
+                frmView.Show();
+            }
+            else
+            {
+                setBlocked();
+                MessageBox.Show(response.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

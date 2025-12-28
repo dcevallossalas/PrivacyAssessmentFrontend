@@ -35,10 +35,10 @@ ct <- seq(from = 0, to = 1, by = 0.05)
 df <- data.frame()
 
 for (umbral in ct) {
-  data_filtrada <- data %>%
-    filter(exp(logprob) >= umbral)
+  data_filtered <- data %>%
+    filter(exp(logprob) > umbral)
   
-  count <- data_filtrada %>%
+  count <- data_filtered %>%
     group_by(category) %>%
     summarise(principle_count = n_distinct(principle), .groups = "drop")
   
@@ -52,7 +52,7 @@ for (umbral in ct) {
   df$category <- factor(df$category, levels = categories$category)
 }
 
-picturePrincipes <- ggplot(df, aes(x = ct, y = principle_count, color = category)) +
+picturePrinciples <- ggplot(df, aes(x = ct, y = principle_count, color = category)) +
   geom_line() +
   geom_point() +
   scale_x_continuous(breaks = seq(0, 1, by = 0.1),
@@ -67,7 +67,7 @@ picturePrincipes <- ggplot(df, aes(x = ct, y = principle_count, color = category
   ) +
   theme_light()
 
-picturePrincipes
+picturePrinciples
 ```
 
 ### Number of goals met by confidence threshold
@@ -76,10 +76,10 @@ picturePrincipes
 df <- data.frame()
 
 for (umbral in ct) {
-  data_filtrada <- data %>%
-    filter(exp(logprob) >= umbral)
+  data_filtered <- data %>%
+    filter(exp(logprob) > umbral)
   
-  count <- data_filtrada %>%
+  count <- data_filtered %>%
     group_by(category) %>%
     summarise(goal_count = n_distinct(goal), .groups = "drop")
   
@@ -111,4 +111,45 @@ pictureGoals <- ggplot(df, aes(x = ct, y = goal_count, color = category)) +
 pictureGoals
 ```
 
+### Number of goals met for each principle at a 0.80 confidence threshold
+
+```{r warning=FALSE, echo=FALSE}
+th_ref = 0.80
+data_filtered <- data %>%
+    filter(exp(logprob) > th_ref)
+
+principles <- sort(unique(data_filtered$principle))
+plots <- list()
+
+for (i in 1:length(principles)) {
+  p = principles[i]
+  #print(paste("Principle ", p))
+  cat("Principle ", p)
+  
+  data_final <- data_filtered %>%
+    filter(principle == p)
+  
+  count <- data_final %>%
+    group_by(category) %>%
+    summarise(goal_count = n_distinct(goal), .groups = "drop")
+  
+  partial <- categories %>%
+    select(category) %>%
+    left_join(count, by = "category") %>%
+    mutate(goal_count = ifelse(is.na(goal_count), 0, goal_count))
+  
+  partial$category <- factor(partial$category, levels = categories$category)
+  
+  picturePrinciple <- ggplot(partial, aes(x = category, y = goal_count, fill = category))+
+    geom_bar(stat="identity", position=position_dodge(width=0.9), width=0.9, show.legend = FALSE)+
+    geom_text(aes(label=goal_count),position=position_dodge(width=0.9), vjust=-0.5, hjust=0.5, color="black", size=3.5)+
+    labs(title = "", x = "Normative / Law", y = "Number of goals")+
+    scale_fill_manual(values = palette)+
+    scale_y_continuous(breaks = scales::breaks_width(1)) +
+   expand_limits(y = max(partial$goal_count) + 0)
+  
+  plots[[i]] <- picturePrinciple
+  print(picturePrinciple)
+}
+```
 

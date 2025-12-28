@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics.Metrics;
 using System.Reflection;
 using System.Reflection.Metadata;
@@ -125,6 +126,7 @@ namespace PrivacyAssessment
             btnLoadNormative.Enabled = false;
             btnFindNormative.Enabled = false;
             btnDelete.Enabled = false;
+            btnView.Enabled = false;
             txtPathNormative.Text = string.Empty;
             txtPathNormative.ReadOnly = true;
             txtNameNormative.Text = string.Empty;
@@ -152,6 +154,7 @@ namespace PrivacyAssessment
             btnFindNormative.Enabled = true;
             btnLoadNormative.Enabled = true;
             btnDelete.Enabled = false;
+            btnView.Enabled = false;
             txtPathNormative.Text = string.Empty;
             txtPathNormative.ReadOnly = true;
             txtNameNormative.Text = string.Empty;
@@ -180,6 +183,7 @@ namespace PrivacyAssessment
             btnFindNormative.Enabled = false;
             btnLoadNormative.Enabled = false;
             btnDelete.Enabled = true;
+            btnView.Enabled = true;
             txtPathNormative.Text = string.Empty;
             txtPathNormative.ReadOnly = true;
             txtNameNormative.ReadOnly = true;
@@ -348,7 +352,7 @@ namespace PrivacyAssessment
             {
                 lsbCategories.Items.RemoveAt(lsbCategories.SelectedIndex);
                 btnDeleteCategory.Enabled = false;
-                
+
             }
         }
 
@@ -410,6 +414,21 @@ namespace PrivacyAssessment
             if (char.IsControl(e.KeyChar) && e.KeyChar != (char)Keys.Back)
             {
                 e.Handled = true;
+            }
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            Response response = Assessment.generateView(0, 0, int.Parse(txtId.Text));
+            if (response.code == 0)
+            {
+                FrmView frmView = new FrmView(response.text);
+                frmView.Show();
+            }
+            else
+            {
+                setBlocked();
+                MessageBox.Show(response.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

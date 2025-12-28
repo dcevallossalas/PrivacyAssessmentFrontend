@@ -12,5 +12,6 @@ namespace AssessmentLibrary.AssessmentModel
         public string message { get; set; }
 
         public int id { get; set; }
+        public string text { get; set; }
     }
 }

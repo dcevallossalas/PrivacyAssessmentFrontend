@@ -162,6 +162,7 @@
             btnGenerate.TabIndex = 11;
             btnGenerate.Text = "Generate";
             btnGenerate.UseVisualStyleBackColor = true;
+            btnGenerate.Click += btnGenerate_Click;
             // 
             // btnRename
             // 

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
@@ -663,6 +665,82 @@ namespace PrivacyAssessment
         {
             FrmManagement frmManage = new FrmManagement();
             frmManage.ShowDialog();
+        }
+
+        private void btnGenerate_Click(object sender, EventArgs e)
+        {
+            var items = lsbFinalCases.Items;
+            string path = ConfigurationManager.AppSettings["path"];
+            string file1 = "categories";
+            List<CaseItem> values = new List<CaseItem>();
+
+            foreach (var item in items)
+            {
+                CaseItem caseFinalItem = (CaseItem)item;
+                file1 = file1 + "\n" + caseFinalItem.alias;
+                values.Add(caseFinalItem);
+            }
+
+            File.WriteAllText(Path.Combine(path,"categories.csv"), file1);
+
+            Response response = Assessment.generateFiles(values);
+            if (response.code == 0)
+            {
+                File.WriteAllText(Path.Combine(path, "logprobs.csv"), response.text);
+                GenerateDashboard();
+            }
+            else
+            {
+                MessageBox.Show(response.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void GenerateDashboard()
+        {
+            try
+            {
+                string path = ConfigurationManager.AppSettings["path"];
+                string rpath = ConfigurationManager.AppSettings["rpath"];
+                string rscript = ConfigurationManager.AppSettings["rscript"];
+
+                var info = new ProcessStartInfo
+                {
+                    FileName = Path.Combine(rpath, "Rscript.exe"),
+                    Arguments = Path.Combine(path, rscript),
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    CreateNoWindow = true,
+                    UseShellExecute = false
+                };
+
+                using (var proc = new Process { StartInfo = info })
+                {
+                    proc.Start();
+                    string output = proc.StandardOutput.ReadToEnd();
+                    string error = proc.StandardError.ReadToEnd();
+                    proc.WaitForExit();
+
+                    if (!string.IsNullOrEmpty(error) && !error.Contains("Output created:"))
+                    {
+                        MessageBox.Show("R Error: " + error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    } else
+                    {
+                        MessageBox.Show("Operation executed with success!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        using (var procBrowser = new Process())
+                        {
+                            procBrowser.StartInfo.UseShellExecute = true;
+                            procBrowser.StartInfo.FileName = Path.Combine(path, "Statistics.html");
+                            procBrowser.Start();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

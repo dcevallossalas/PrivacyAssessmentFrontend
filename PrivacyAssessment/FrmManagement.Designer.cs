@@ -53,6 +53,16 @@
             txtIdLaw = new TextBox();
             lblAliasLaw = new Label();
             grbCase = new GroupBox();
+            btnNoncompliancesView = new Button();
+            btnNoncompliances = new Button();
+            btnCompliancesView = new Button();
+            btnCompliances = new Button();
+            btnGptView = new Button();
+            btnGpt = new Button();
+            txtNoncompliances = new TextBox();
+            txtCompliances = new TextBox();
+            lblNoncompliances = new Label();
+            lblCompliances = new Label();
             btnCreate = new Button();
             txtGPT = new TextBox();
             lblGPT = new Label();
@@ -303,6 +313,16 @@
             // 
             // grbCase
             // 
+            grbCase.Controls.Add(btnNoncompliancesView);
+            grbCase.Controls.Add(btnNoncompliances);
+            grbCase.Controls.Add(btnCompliancesView);
+            grbCase.Controls.Add(btnCompliances);
+            grbCase.Controls.Add(btnGptView);
+            grbCase.Controls.Add(btnGpt);
+            grbCase.Controls.Add(txtNoncompliances);
+            grbCase.Controls.Add(txtCompliances);
+            grbCase.Controls.Add(lblNoncompliances);
+            grbCase.Controls.Add(lblCompliances);
             grbCase.Controls.Add(btnCreate);
             grbCase.Controls.Add(txtGPT);
             grbCase.Controls.Add(lblGPT);
@@ -316,14 +336,108 @@
             grbCase.Controls.Add(lblDescription);
             grbCase.Location = new Point(898, 240);
             grbCase.Name = "grbCase";
-            grbCase.Size = new Size(452, 507);
+            grbCase.Size = new Size(604, 562);
             grbCase.TabIndex = 3;
             grbCase.TabStop = false;
             grbCase.Text = "Case study";
             // 
+            // btnNoncompliancesView
+            // 
+            btnNoncompliancesView.Location = new Point(480, 424);
+            btnNoncompliancesView.Name = "btnNoncompliancesView";
+            btnNoncompliancesView.Size = new Size(94, 29);
+            btnNoncompliancesView.TabIndex = 26;
+            btnNoncompliancesView.Text = "View";
+            btnNoncompliancesView.UseVisualStyleBackColor = true;
+            btnNoncompliancesView.Click += btnNoncompliancesView_Click;
+            // 
+            // btnNoncompliances
+            // 
+            btnNoncompliances.Location = new Point(380, 424);
+            btnNoncompliances.Name = "btnNoncompliances";
+            btnNoncompliances.Size = new Size(94, 29);
+            btnNoncompliances.TabIndex = 25;
+            btnNoncompliances.Text = "Generate";
+            btnNoncompliances.UseVisualStyleBackColor = true;
+            btnNoncompliances.Click += btnNoncompliances_Click;
+            // 
+            // btnCompliancesView
+            // 
+            btnCompliancesView.Location = new Point(480, 364);
+            btnCompliancesView.Name = "btnCompliancesView";
+            btnCompliancesView.Size = new Size(94, 29);
+            btnCompliancesView.TabIndex = 24;
+            btnCompliancesView.Text = "View";
+            btnCompliancesView.UseVisualStyleBackColor = true;
+            btnCompliancesView.Click += btnCompliancesView_Click;
+            // 
+            // btnCompliances
+            // 
+            btnCompliances.Location = new Point(380, 364);
+            btnCompliances.Name = "btnCompliances";
+            btnCompliances.Size = new Size(94, 29);
+            btnCompliances.TabIndex = 23;
+            btnCompliances.Text = "Generate";
+            btnCompliances.UseVisualStyleBackColor = true;
+            btnCompliances.Click += btnCompliances_Click;
+            // 
+            // btnGptView
+            // 
+            btnGptView.Location = new Point(480, 303);
+            btnGptView.Name = "btnGptView";
+            btnGptView.Size = new Size(94, 29);
+            btnGptView.TabIndex = 22;
+            btnGptView.Text = "View";
+            btnGptView.UseVisualStyleBackColor = true;
+            btnGptView.Click += btnGptView_Click;
+            // 
+            // btnGpt
+            // 
+            btnGpt.Location = new Point(380, 303);
+            btnGpt.Name = "btnGpt";
+            btnGpt.Size = new Size(94, 29);
+            btnGpt.TabIndex = 21;
+            btnGpt.Text = "Generate";
+            btnGpt.UseVisualStyleBackColor = true;
+            btnGpt.Click += btnGpt_Click;
+            // 
+            // txtNoncompliances
+            // 
+            txtNoncompliances.Location = new Point(166, 424);
+            txtNoncompliances.Name = "txtNoncompliances";
+            txtNoncompliances.ReadOnly = true;
+            txtNoncompliances.Size = new Size(200, 27);
+            txtNoncompliances.TabIndex = 20;
+            // 
+            // txtCompliances
+            // 
+            txtCompliances.Location = new Point(166, 366);
+            txtCompliances.Name = "txtCompliances";
+            txtCompliances.ReadOnly = true;
+            txtCompliances.Size = new Size(200, 27);
+            txtCompliances.TabIndex = 19;
+            // 
+            // lblNoncompliances
+            // 
+            lblNoncompliances.AutoSize = true;
+            lblNoncompliances.Location = new Point(17, 424);
+            lblNoncompliances.Name = "lblNoncompliances";
+            lblNoncompliances.Size = new Size(126, 20);
+            lblNoncompliances.TabIndex = 18;
+            lblNoncompliances.Text = "Non-compliances";
+            // 
+            // lblCompliances
+            // 
+            lblCompliances.AutoSize = true;
+            lblCompliances.Location = new Point(17, 366);
+            lblCompliances.Name = "lblCompliances";
+            lblCompliances.Size = new Size(97, 20);
+            lblCompliances.TabIndex = 17;
+            lblCompliances.Text = "Compliances:";
+            // 
             // btnCreate
             // 
-            btnCreate.Location = new Point(179, 450);
+            btnCreate.Location = new Point(297, 505);
             btnCreate.Name = "btnCreate";
             btnCreate.Size = new Size(94, 29);
             btnCreate.TabIndex = 16;
@@ -333,7 +447,7 @@
             // 
             // txtGPT
             // 
-            txtGPT.Location = new Point(128, 341);
+            txtGPT.Location = new Point(166, 303);
             txtGPT.Name = "txtGPT";
             txtGPT.ReadOnly = true;
             txtGPT.Size = new Size(200, 27);
@@ -342,7 +456,7 @@
             // lblGPT
             // 
             lblGPT.AutoSize = true;
-            lblGPT.Location = new Point(17, 348);
+            lblGPT.Location = new Point(17, 303);
             lblGPT.Name = "lblGPT";
             lblGPT.Size = new Size(93, 20);
             lblGPT.TabIndex = 15;
@@ -350,27 +464,27 @@
             // 
             // txtDescription
             // 
-            txtDescription.Location = new Point(128, 171);
+            txtDescription.Location = new Point(166, 170);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
             txtDescription.ReadOnly = true;
-            txtDescription.Size = new Size(308, 96);
+            txtDescription.Size = new Size(400, 96);
             txtDescription.TabIndex = 14;
             // 
             // txtId
             // 
-            txtId.Location = new Point(128, 40);
+            txtId.Location = new Point(166, 44);
             txtId.Name = "txtId";
             txtId.ReadOnly = true;
-            txtId.Size = new Size(238, 27);
+            txtId.Size = new Size(400, 27);
             txtId.TabIndex = 10;
             // 
             // txtAlias
             // 
-            txtAlias.Location = new Point(128, 133);
+            txtAlias.Location = new Point(166, 133);
             txtAlias.Name = "txtAlias";
             txtAlias.ReadOnly = true;
-            txtAlias.Size = new Size(238, 27);
+            txtAlias.Size = new Size(400, 27);
             txtAlias.TabIndex = 13;
             // 
             // lblName
@@ -384,10 +498,10 @@
             // 
             // txtName
             // 
-            txtName.Location = new Point(128, 86);
+            txtName.Location = new Point(166, 86);
             txtName.Name = "txtName";
             txtName.ReadOnly = true;
-            txtName.Size = new Size(238, 27);
+            txtName.Size = new Size(400, 27);
             txtName.TabIndex = 12;
             // 
             // lblAlias
@@ -421,7 +535,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1430, 829);
+            ClientSize = new Size(1550, 829);
             Controls.Add(grbCase);
             Controls.Add(grbLawInformation);
             Controls.Add(grbNormativeInformation);
@@ -478,5 +592,15 @@
         private Label lblDescription;
         private Button btnCreate;
         private TextBox txtGPT;
+        private Button btnNoncompliancesView;
+        private Button btnNoncompliances;
+        private Button btnCompliancesView;
+        private Button btnCompliances;
+        private Button btnGptView;
+        private Button btnGpt;
+        private TextBox txtNoncompliances;
+        private TextBox txtCompliances;
+        private Label lblNoncompliances;
+        private Label lblCompliances;
     }
 }

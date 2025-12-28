@@ -45,6 +45,7 @@
             lblId = new Label();
             txtId = new TextBox();
             groupBox1 = new GroupBox();
+            btnView = new Button();
             btnDelete = new Button();
             gbNormatives.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -69,7 +70,7 @@
             // 
             // btnLoadLaw
             // 
-            btnLoadLaw.Location = new Point(194, 319);
+            btnLoadLaw.Location = new Point(400, 334);
             btnLoadLaw.Name = "btnLoadLaw";
             btnLoadLaw.Size = new Size(186, 65);
             btnLoadLaw.TabIndex = 7;
@@ -197,6 +198,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(btnView);
             groupBox1.Controls.Add(btnDelete);
             groupBox1.Controls.Add(btnLoadLaw);
             groupBox1.Controls.Add(txtId);
@@ -215,6 +217,16 @@
             groupBox1.Size = new Size(986, 412);
             groupBox1.TabIndex = 16;
             groupBox1.TabStop = false;
+            // 
+            // btnView
+            // 
+            btnView.Location = new Point(863, 181);
+            btnView.Name = "btnView";
+            btnView.Size = new Size(94, 29);
+            btnView.TabIndex = 17;
+            btnView.Text = "View";
+            btnView.UseVisualStyleBackColor = true;
+            btnView.Click += btnView_Click;
             // 
             // btnDelete
             // 
@@ -266,5 +278,6 @@
         private TextBox txtId;
         private GroupBox groupBox1;
         private Button btnDelete;
+        private Button btnView;
     }
 }

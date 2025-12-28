@@ -13,6 +13,79 @@ namespace AssessmentLibrary.AssessmentLogic
 {
     public class Assessment
     {
+        public static Response generateFiles(List<CaseItem> values)
+        {
+            string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
+            var client = new RestClient(endpoint);
+            var request = new RestRequest("/generatefiles", Method.Post);
+
+            // Json
+            request.AddParameter("json", JsonSerializer.Serialize(values), ParameterType.GetOrPost);
+
+            RestResponse result = client.Execute(request);
+            if (result.IsSuccessful)
+            {
+                Response response = JsonSerializer.Deserialize<Response>(result.Content);
+                return response;
+            }
+            else
+            {
+                return new Response
+                {
+                    code = -1,
+                    message = "Error. Status Code: " + result.StatusCode + " Status Description: " + result.ErrorMessage
+                };
+            }
+        }
+
+        public static Response generateView(int type, int subtype, int id)
+        {
+            string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
+            var client = new RestClient(endpoint);
+            var request = new RestRequest("/generateview/" + type + "/" + subtype + "/" + id, Method.Get);
+
+            var result = client.ExecuteGet(request);
+
+            if (result.IsSuccessful)
+            {
+                Response response = JsonSerializer.Deserialize<Response>(result.Content);
+                return response;
+            }
+            else
+            {
+                return new Response
+                {
+                    code = -1,
+                    message = "Error. Status Code: " + result.StatusCode + " Status Description: " + result.ErrorMessage
+                };
+            }
+        }
+
+        public static Response generateQuery(GptQuery gptQuery)
+        {
+            string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
+            var client = new RestClient(endpoint);
+            var request = new RestRequest("/generatequery", Method.Post);
+
+            // Json
+            request.AddParameter("json", JsonSerializer.Serialize(gptQuery), ParameterType.GetOrPost);
+
+            RestResponse result = client.Execute(request);
+            if (result.IsSuccessful)
+            {
+                Response response = JsonSerializer.Deserialize<Response>(result.Content);
+                return response;
+            }
+            else
+            {
+                return new Response
+                {
+                    code = -1,
+                    message = "Error. Status Code: " + result.StatusCode + " Status Description: " + result.ErrorMessage
+                };
+            }
+        }
+
         public static Response deleteCase(int id)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];

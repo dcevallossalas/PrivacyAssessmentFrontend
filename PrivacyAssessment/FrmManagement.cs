@@ -1,11 +1,14 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.Design.Serialization;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -55,6 +58,16 @@ namespace PrivacyAssessment
             txtNameLaw.Text = string.Empty;
             txtAliasLaw.Text = string.Empty;
             txtDescriptionLaw.Text = string.Empty;
+
+            txtGPT.Text = string.Empty;
+            txtCompliances.Text = string.Empty;
+            txtNoncompliances.Text = string.Empty;
+            btnGpt.Enabled = false;
+            btnGptView.Enabled = false;
+            btnCompliances.Enabled = false;
+            btnCompliancesView.Enabled = false;
+            btnNoncompliances.Enabled = false;
+            btnNoncompliancesView.Enabled = false;
         }
 
         private void setModifyMode()
@@ -62,6 +75,39 @@ namespace PrivacyAssessment
             txtName.ReadOnly = true; ;
             txtAlias.ReadOnly = true;
             txtDescription.ReadOnly = true;
+            txtGPT.ReadOnly = true;
+            txtCompliances.ReadOnly = true;
+            txtNoncompliances.ReadOnly = true;
+            btnGpt.Enabled = true;
+            btnCompliances.Enabled = true;
+            btnNoncompliances.Enabled = true;
+
+            if (string.IsNullOrEmpty(txtGPT.Text))
+            {
+                btnGptView.Enabled = false;
+            }
+            else
+            {
+                btnGptView.Enabled = true;
+            }
+
+            if (string.IsNullOrEmpty(txtCompliances.Text))
+            {
+                btnCompliancesView.Enabled = false;
+            }
+            else
+            {
+                btnCompliancesView.Enabled = true;
+            }
+
+            if (string.IsNullOrEmpty(txtNoncompliances.Text))
+            {
+                btnNoncompliancesView.Enabled = false;
+            }
+            else
+            {
+                btnNoncompliancesView.Enabled = true;
+            }
 
             btnCreate.Enabled = false;
         }
@@ -76,7 +122,14 @@ namespace PrivacyAssessment
             txtDescription.Text = string.Empty;
             txtDescription.ReadOnly = false;
             txtGPT.Text = string.Empty;
-
+            txtCompliances.Text = string.Empty;
+            txtNoncompliances.Text = string.Empty;
+            btnGpt.Enabled = false;
+            btnGptView.Enabled = false;
+            btnCompliances.Enabled = false;
+            btnCompliancesView.Enabled = false;
+            btnNoncompliances.Enabled = false;
+            btnNoncompliancesView.Enabled = false;
             btnCreate.Enabled = true;
         }
 
@@ -86,12 +139,12 @@ namespace PrivacyAssessment
             Documents documents = Assessment.getDocuments(typeNomatives);
             if (documents.code == 0)
             {
-                List<Document> normatives = documents.documents;
+                List<AssessmentLibrary.AssessmentModel.Document> normatives = documents.documents;
                 cmbNormatives.Items.Clear();
                 cmbNormatives.Text = string.Empty;
                 string text;
 
-                foreach (Document normative in normatives)
+                foreach (AssessmentLibrary.AssessmentModel.Document normative in normatives)
                 {
                     if (normative.id == 0)
                         text = normative.name;
@@ -120,13 +173,13 @@ namespace PrivacyAssessment
             documents = Assessment.getDocuments(typeLaws);
             if (documents.code == 0)
             {
-                List<Document> laws = documents.documents;
+                List<AssessmentLibrary.AssessmentModel.Document> laws = documents.documents;
 
                 cmbLaws.Items.Clear();
                 cmbLaws.Text = string.Empty;
                 string text1;
 
-                foreach (Document law in laws)
+                foreach (AssessmentLibrary.AssessmentModel.Document law in laws)
                 {
                     if (law.id == 0)
                         text1 = law.name;
@@ -182,21 +235,22 @@ namespace PrivacyAssessment
 
             if (idNormative > 0 && idLaw > 0)
             {
-                Document normative = Assessment.getDocument(0, idNormative);
+                AssessmentLibrary.AssessmentModel.Document normative = Assessment.getDocument(0, idNormative);
                 if (normative.code == 0)
                 {
                     txtIdNormative.Text = normative.id.ToString();
                     txtNameNormative.Text = normative.name;
-                    txtAliasNormative.Text  = normative.alias;
+                    txtAliasNormative.Text = normative.alias;
                     txtDescriptionNormative.Text = normative.description;
-                } else
+                }
+                else
                 {
                     setBlocked();
                     MessageBox.Show(normative.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                Document law = Assessment.getDocument(1, idLaw);
+                AssessmentLibrary.AssessmentModel.Document law = Assessment.getDocument(1, idLaw);
                 if (law.code == 0)
                 {
                     txtIdLaw.Text = law.id.ToString();
@@ -211,7 +265,7 @@ namespace PrivacyAssessment
                     return;
                 }
 
-                Document document = Assessment.getCase(idNormative, idLaw);
+                AssessmentLibrary.AssessmentModel.Document document = Assessment.getCase(idNormative, idLaw);
 
                 if (document.code == 0)
                 {
@@ -221,7 +275,34 @@ namespace PrivacyAssessment
                         txtName.Text = document.name;
                         txtAlias.Text = document.alias;
                         txtDescription.Text = document.description;
-                        txtGPT.Text = document.gpt;
+
+                        if (document.gpt != "gpt_0.json")
+                        {
+                            txtGPT.Text = string.Empty;
+                        }
+                        else
+                        {
+                            txtGPT.Text = document.gpt;
+                        }
+
+                        if (document.gpt_cs != "gpt_cs_0.txt")
+                        {
+                            txtCompliances.Text = string.Empty;
+                        }
+                        else
+                        {
+                            txtCompliances.Text = document.gpt_cs;
+                        }
+
+                        if (document.gpt_ncs != "gpt_ncs_0.txt")
+                        {
+                            txtNoncompliances.Text = string.Empty;
+                        }
+                        else
+                        {
+                            txtNoncompliances.Text = document.gpt_ncs;
+                        }
+
                         setModifyMode();
                     }
                     else
@@ -260,7 +341,7 @@ namespace PrivacyAssessment
                 return;
             }
 
-            Document document = new Document
+            AssessmentLibrary.AssessmentModel.Document document = new AssessmentLibrary.AssessmentModel.Document
             {
                 name = txtName.Text,
                 alias = txtAlias.Text,
@@ -275,6 +356,97 @@ namespace PrivacyAssessment
                 setModifyMode();
 
                 MessageBox.Show("Case created with success!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                setBlocked();
+                MessageBox.Show(response.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnGpt_Click(object sender, EventArgs e)
+        {
+            Generate(0);
+        }
+
+        private void btnCompliances_Click(object sender, EventArgs e)
+        {
+            Generate(1);
+        }
+
+        private void btnNoncompliances_Click(object sender, EventArgs e)
+        {
+            Generate(2);
+        }
+
+        private void btnGptView_Click(object sender, EventArgs e)
+        {
+            ViewQuery(2, 0);
+        }
+
+        private void btnCompliancesView_Click(object sender, EventArgs e)
+        {
+            ViewQuery(2, 1);
+        }
+
+        private void btnNoncompliancesView_Click(object sender, EventArgs e)
+        {
+            ViewQuery(2, 2);
+        }
+
+        private void Generate(int type)
+        {
+            string message = "Do you want to peform this operation toward GPT? This action will consume tokens.";
+            DialogResult result = Confirmation.ShowCustomYesNo(message, "Confirmation", "Yes", "No");
+
+            if (result == DialogResult.Yes) {
+                int idCase = int.Parse(txtId.Text);
+                int idNormative = int.Parse(txtIdNormative.Text);
+                int idLaw = int.Parse(txtIdLaw.Text);
+                string apiKey = ConfigurationManager.AppSettings["apiKey"];
+
+                GptQuery gptQuery = new GptQuery
+                {
+                    idCase = idCase,
+                    idNormative = idNormative,
+                    idLaw = idLaw,
+                    type = type,
+                    apiKey = apiKey
+                };
+
+                Response response = Assessment.generateQuery(gptQuery);
+                if (response.code == 0)
+                {
+                    if (type == 0)
+                    {
+                        txtGPT.Text = "gpt_" + response.id.ToString() + ".json";
+                    }
+                    else if (type == 1)
+                    {
+                        txtCompliances.Text = "gpt_cs_" + response.id.ToString() + ".txt";
+                    }
+                    else if (type == 2)
+                    {
+                        txtNoncompliances.Text = "gpt_ncs_" + response.id.ToString() + ".txt";
+                    }
+
+                    MessageBox.Show("Query executed with success!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    setBlocked();
+                    MessageBox.Show(response.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void ViewQuery(int type, int subtype)
+        {
+            Response response = Assessment.generateView(type, subtype, int.Parse(txtId.Text));
+            if (response.code == 0)
+            {
+                FrmView frmView = new FrmView(response.text);
+                frmView.Show();
             }
             else
             {
