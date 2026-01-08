@@ -29,7 +29,7 @@ namespace PrivacyAssessment
         public void setBlocked()
         {
             lsbCases.Items.Clear();
-            btnManage.Enabled = false;
+            //btnManage.Enabled = false;
             btnAdd.Enabled = false;
             btnCombine.Enabled = false;
             btnDeleteCase.Enabled = false;
@@ -671,7 +671,7 @@ namespace PrivacyAssessment
         {
             var items = lsbFinalCases.Items;
             string path = ConfigurationManager.AppSettings["path"];
-            string file1 = "categories";
+            string file1 = "category";
             List<CaseItem> values = new List<CaseItem>();
 
             foreach (var item in items)
@@ -687,6 +687,13 @@ namespace PrivacyAssessment
             if (response.code == 0)
             {
                 File.WriteAllText(Path.Combine(path, "logprobs.csv"), response.text);
+                // No data condition
+                if (!response.text.Contains("\n"))
+                {
+                    MessageBox.Show("No data to process, make use of GPT first to retrieve results", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 GenerateDashboard();
             }
             else

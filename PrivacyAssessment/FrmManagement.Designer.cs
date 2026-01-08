@@ -542,6 +542,7 @@
             Controls.Add(grbComboBoxes);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "FrmManagement";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Management";
             grbComboBoxes.ResumeLayout(false);
             grbComboBoxes.PerformLayout();

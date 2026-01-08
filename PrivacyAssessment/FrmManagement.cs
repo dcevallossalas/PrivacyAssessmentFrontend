@@ -36,8 +36,12 @@ namespace PrivacyAssessment
         private void setBlocked()
         {
             cmbNormatives.Items.Clear();
+            cmbLaws.Items.Clear();
             cmbNormatives.Text = string.Empty;
             cmbNormatives.Enabled = false;
+
+            cmbLaws.Text = string.Empty;
+            cmbLaws.Enabled = false;
             btnCreate.Enabled = false;
 
             txtId.Text = string.Empty;
@@ -160,7 +164,15 @@ namespace PrivacyAssessment
                     cmbNormatives.Items.Add(cmbItem);
                 }
 
-                cmbNormatives.SelectedIndex = 0;
+                if (cmbNormatives.Items.Count > 0)
+                {
+                    cmbNormatives.Enabled = true;
+                    cmbNormatives.SelectedIndex = 0;
+                }
+                else
+                {
+                    setBlocked();
+                }
             }
             else
             {
@@ -194,8 +206,15 @@ namespace PrivacyAssessment
 
                     cmbLaws.Items.Add(cmbItem1);
                 }
-
-                cmbLaws.SelectedIndex = 0;
+                if (cmbLaws.Items.Count > 0)
+                {
+                    cmbLaws.Enabled = true;
+                    cmbLaws.SelectedIndex = 0;
+                }
+                else
+                {
+                    setBlocked();
+                }
             }
             else
             {
@@ -276,7 +295,7 @@ namespace PrivacyAssessment
                         txtAlias.Text = document.alias;
                         txtDescription.Text = document.description;
 
-                        if (document.gpt != "gpt_0.json")
+                        if (document.gpt == "gpt_0.json")
                         {
                             txtGPT.Text = string.Empty;
                         }
@@ -285,7 +304,7 @@ namespace PrivacyAssessment
                             txtGPT.Text = document.gpt;
                         }
 
-                        if (document.gpt_cs != "gpt_cs_0.txt")
+                        if (document.gpt_cs == "gpt_cs_0.txt")
                         {
                             txtCompliances.Text = string.Empty;
                         }
@@ -294,7 +313,7 @@ namespace PrivacyAssessment
                             txtCompliances.Text = document.gpt_cs;
                         }
 
-                        if (document.gpt_ncs != "gpt_ncs_0.txt")
+                        if (document.gpt_ncs == "gpt_ncs_0.txt")
                         {
                             txtNoncompliances.Text = string.Empty;
                         }
@@ -354,7 +373,8 @@ namespace PrivacyAssessment
             if (response.code == 0)
             {
                 setModifyMode();
-
+                txtId.Text = response.id.ToString();
+                txtId.Focus();
                 MessageBox.Show("Case created with success!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -396,10 +416,11 @@ namespace PrivacyAssessment
 
         private void Generate(int type)
         {
-            string message = "Do you want to peform this operation toward GPT? This action will consume tokens.";
+            string message = "Do you want to peform this operation?";
             DialogResult result = Confirmation.ShowCustomYesNo(message, "Confirmation", "Yes", "No");
 
-            if (result == DialogResult.Yes) {
+            if (result == DialogResult.Yes)
+            {
                 int idCase = int.Parse(txtId.Text);
                 int idNormative = int.Parse(txtIdNormative.Text);
                 int idLaw = int.Parse(txtIdLaw.Text);
@@ -420,14 +441,20 @@ namespace PrivacyAssessment
                     if (type == 0)
                     {
                         txtGPT.Text = "gpt_" + response.id.ToString() + ".json";
+                        btnGpt.Enabled = true;
+                        btnGptView.Enabled = true;
                     }
                     else if (type == 1)
                     {
                         txtCompliances.Text = "gpt_cs_" + response.id.ToString() + ".txt";
+                        btnCompliances.Enabled = true;
+                        btnCompliancesView.Enabled = true;
                     }
                     else if (type == 2)
                     {
                         txtNoncompliances.Text = "gpt_ncs_" + response.id.ToString() + ".txt";
+                        btnNoncompliances.Enabled = true;
+                        btnNoncompliancesView.Enabled = true;
                     }
 
                     MessageBox.Show("Query executed with success!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

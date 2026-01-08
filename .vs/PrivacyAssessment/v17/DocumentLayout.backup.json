@@ -3,28 +3,60 @@
   "WorkspaceRootPath": "E:\\Doctorado\\PrivacyAssessmentFrontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmlaws.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmlaws.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmlaws.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmlaws.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|E:\\Doctorado\\PrivacyAssessmentFrontend\\privacyassessment\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|e:\\doctorado\\privacyassessmentfrontend\\assessmentlibrary\\assessmentlogic\\assessment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|solutionrelative:assessmentlibrary\\assessmentlogic\\assessment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|E:\\Doctorado\\PrivacyAssessmentFrontend\\privacyassessment\\frmmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|E:\\Doctorado\\PrivacyAssessmentFrontend\\privacyassessment\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|E:\\Doctorado\\PrivacyAssessmentFrontend\\privacyassessment\\frmview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|e:\\doctorado\\privacyassessmentfrontend\\assessmentlibrary\\assessmentlogic\\assessment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|solutionrelative:assessmentlibrary\\assessmentlogic\\assessment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|e:\\doctorado\\privacyassessmentfrontend\\assessmentlibrary\\assessmentmodel\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|solutionrelative:assessmentlibrary\\assessmentmodel\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmlaws.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmlaws.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmnormatives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmnormatives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|E:\\Doctorado\\PrivacyAssessmentFrontend\\privacyassessment\\frmnormatives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmnormatives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|E:\\Doctorado\\PrivacyAssessmentFrontend\\privacyassessment\\frmlaws.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmlaws.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|e:\\doctorado\\privacyassessmentfrontend\\assessmentlibrary\\assessmentmodel\\cases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,20 +71,8 @@
       "RelativeMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|solutionrelative:assessmentlibrary\\assessmentmodel\\documents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|e:\\doctorado\\privacyassessmentfrontend\\assessmentlibrary\\assessmentmodel\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|solutionrelative:assessmentlibrary\\assessmentmodel\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|e:\\doctorado\\privacyassessmentfrontend\\assessmentlibrary\\assessmentlogic\\gptquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B675A630-F278-4236-B85F-8A38AAEBC2BF}|AssessmentLibrary\\AssessmentLibrary.csproj|solutionrelative:assessmentlibrary\\assessmentlogic\\gptquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmnormatives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmnormatives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|E:\\Doctorado\\PrivacyAssessmentFrontend\\privacyassessment\\frmnormatives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmnormatives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmstart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,110 +94,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmLaws.cs",
-              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmLaws.cs",
-              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmLaws.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmLaws.cs",
-              "RelativeToolTip": "PrivacyAssessment\\FrmLaws.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAvwL8AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T00:39:16.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FrmLaws.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmLaws.cs",
-              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmLaws.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmLaws.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PrivacyAssessment\\FrmLaws.cs [Dise\u00F1o]",
+              "Title": "FrmManagement.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmManagement.cs",
+              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmManagement.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmManagement.cs",
+              "RelativeToolTip": "PrivacyAssessment\\FrmManagement.cs",
+              "ViewState": "AgIAAF0BAAAAAAAAAADwv3gBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T00:39:13.114Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmMain.cs",
-              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmMain.cs",
-              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmMain.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmMain.cs",
-              "RelativeToolTip": "PrivacyAssessment\\FrmMain.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAArwH0AAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T00:26:06.393Z",
+              "WhenOpened": "2026-01-07T14:19:58.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrmMain.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmMain.cs",
-              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmMain.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmMain.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PrivacyAssessment\\FrmMain.cs [Dise\u00F1o]",
+              "Title": "FrmManagement.cs [Design]",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmManagement.cs",
+              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmManagement.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmManagement.cs [Design]",
+              "RelativeToolTip": "PrivacyAssessment\\FrmManagement.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T00:26:04.335Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-01-07T14:19:18.071Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Cases.cs",
-              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Cases.cs",
-              "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentModel\\Cases.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Cases.cs",
-              "RelativeToolTip": "AssessmentLibrary\\AssessmentModel\\Cases.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "FrmView.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmView.cs",
+              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmView.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmView.cs",
+              "RelativeToolTip": "PrivacyAssessment\\FrmView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T00:10:05.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Documents.cs",
-              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Documents.cs",
-              "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentModel\\Documents.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Documents.cs",
-              "RelativeToolTip": "AssessmentLibrary\\AssessmentModel\\Documents.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T00:09:53.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Response.cs",
-              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Response.cs",
-              "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentModel\\Response.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Response.cs",
-              "RelativeToolTip": "AssessmentLibrary\\AssessmentModel\\Response.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T00:09:00.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Assessment.cs",
-              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentLogic\\Assessment.cs",
-              "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentLogic\\Assessment.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentLogic\\Assessment.cs",
-              "RelativeToolTip": "AssessmentLibrary\\AssessmentLogic\\Assessment.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAswGwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T00:07:36.042Z",
+              "WhenOpened": "2026-01-07T13:59:20.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "GptQuery.cs",
               "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentLogic\\GptQuery.cs",
               "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentLogic\\GptQuery.cs",
@@ -189,40 +148,110 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FrmNormatives.cs",
-              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmNormatives.cs",
-              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmNormatives.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmNormatives.cs",
-              "RelativeToolTip": "PrivacyAssessment\\FrmNormatives.cs",
-              "ViewState": "AgIAAG8BAAAAAAAAAADgv4gBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T23:55:42.75Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ComboBoxItem.cs",
-              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\ComboBoxItem.cs",
-              "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentModel\\ComboBoxItem.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\ComboBoxItem.cs",
-              "RelativeToolTip": "AssessmentLibrary\\AssessmentModel\\ComboBoxItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T23:43:04.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "App.config",
               "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\App.config",
               "RelativeDocumentMoniker": "PrivacyAssessment\\App.config",
               "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\App.config",
               "RelativeToolTip": "PrivacyAssessment\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-01-01T23:33:03.603Z"
+              "WhenOpened": "2026-01-01T23:33:03.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmMain.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmMain.cs",
+              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmMain.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmMain.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PrivacyAssessment\\FrmMain.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T00:26:04.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmView.cs [Design]",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmView.cs",
+              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmView.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmView.cs [Design]",
+              "RelativeToolTip": "PrivacyAssessment\\FrmView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T14:19:11.077Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmMain.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmMain.cs",
+              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmMain.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmMain.cs",
+              "RelativeToolTip": "PrivacyAssessment\\FrmMain.cs",
+              "ViewState": "AgIAAKICAAAAAAAAAADwv7cCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T00:26:06.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmView.Designer.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmView.Designer.cs",
+              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmView.Designer.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmView.Designer.cs",
+              "RelativeToolTip": "PrivacyAssessment\\FrmView.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T17:26:54.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Assessment.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentLogic\\Assessment.cs",
+              "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentLogic\\Assessment.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentLogic\\Assessment.cs",
+              "RelativeToolTip": "AssessmentLibrary\\AssessmentLogic\\Assessment.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwEwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T00:07:36.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Response.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Response.cs",
+              "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentModel\\Response.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Response.cs",
+              "RelativeToolTip": "AssessmentLibrary\\AssessmentModel\\Response.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T00:09:00.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FrmLaws.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmLaws.cs",
+              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmLaws.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmLaws.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PrivacyAssessment\\FrmLaws.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T00:39:13.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmLaws.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmLaws.cs",
+              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmLaws.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmLaws.cs",
+              "RelativeToolTip": "PrivacyAssessment\\FrmLaws.cs",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAswAwBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T00:39:16.488Z"
             },
             {
               "$type": "Document",
@@ -237,7 +266,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
+              "Title": "FrmNormatives.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmNormatives.cs",
+              "RelativeDocumentMoniker": "PrivacyAssessment\\FrmNormatives.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmNormatives.cs",
+              "RelativeToolTip": "PrivacyAssessment\\FrmNormatives.cs",
+              "ViewState": "AgIAAJUBAAAAAAAAAAAswKUBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T23:55:42.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Documents.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Documents.cs",
+              "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentModel\\Documents.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Documents.cs",
+              "RelativeToolTip": "AssessmentLibrary\\AssessmentModel\\Documents.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T00:09:53.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Cases.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Cases.cs",
+              "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentModel\\Cases.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\Cases.cs",
+              "RelativeToolTip": "AssessmentLibrary\\AssessmentModel\\Cases.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T00:10:05.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ComboBoxItem.cs",
+              "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\ComboBoxItem.cs",
+              "RelativeDocumentMoniker": "AssessmentLibrary\\AssessmentModel\\ComboBoxItem.cs",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\AssessmentLibrary\\AssessmentModel\\ComboBoxItem.cs",
+              "RelativeToolTip": "AssessmentLibrary\\AssessmentModel\\ComboBoxItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T23:43:04.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "FrmStart.cs",
               "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmStart.cs",
               "RelativeDocumentMoniker": "PrivacyAssessment\\FrmStart.cs",
@@ -250,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\Program.cs",
               "RelativeDocumentMoniker": "PrivacyAssessment\\Program.cs",
@@ -262,14 +339,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FrmStart.cs [Dise\u00F1o]",
+              "DocumentIndex": 19,
+              "Title": "FrmStart.cs [Design]",
               "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmStart.cs",
               "RelativeDocumentMoniker": "PrivacyAssessment\\FrmStart.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmStart.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PrivacyAssessment\\FrmStart.cs [Dise\u00F1o]",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmStart.cs [Design]",
+              "RelativeToolTip": "PrivacyAssessment\\FrmStart.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T23:08:39.587Z"
+              "WhenOpened": "2026-01-01T23:08:39.587Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

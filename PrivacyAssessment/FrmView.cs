@@ -15,7 +15,7 @@ namespace PrivacyAssessment
         public FrmView(string text)
         {
             InitializeComponent();
-            txtContent.Text = Text;
+            txtContent.Text = text.Replace("\n", Environment.NewLine).Replace("\\n", Environment.NewLine);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
