@@ -47,7 +47,7 @@
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(222, 55);
+            btnSearch.Location = new Point(247, 63);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(94, 29);
             btnSearch.TabIndex = 0;
@@ -58,16 +58,17 @@
             // lsbCases
             // 
             lsbCases.FormattingEnabled = true;
-            lsbCases.Location = new Point(31, 124);
+            lsbCases.HorizontalScrollbar = true;
+            lsbCases.Location = new Point(24, 126);
             lsbCases.Name = "lsbCases";
             lsbCases.SelectionMode = SelectionMode.MultiExtended;
-            lsbCases.Size = new Size(486, 184);
+            lsbCases.Size = new Size(544, 184);
             lsbCases.TabIndex = 1;
             lsbCases.SelectedIndexChanged += lsbCases_SelectedIndexChanged;
             // 
             // btnManage
             // 
-            btnManage.Location = new Point(423, 356);
+            btnManage.Location = new Point(474, 356);
             btnManage.Name = "btnManage";
             btnManage.Size = new Size(94, 29);
             btnManage.TabIndex = 2;
@@ -77,7 +78,7 @@
             // 
             // btnNormatives
             // 
-            btnNormatives.Location = new Point(35, 356);
+            btnNormatives.Location = new Point(24, 356);
             btnNormatives.Name = "btnNormatives";
             btnNormatives.Size = new Size(94, 29);
             btnNormatives.TabIndex = 3;
@@ -87,7 +88,7 @@
             // 
             // btnLaws
             // 
-            btnLaws.Location = new Point(135, 356);
+            btnLaws.Location = new Point(124, 356);
             btnLaws.Name = "btnLaws";
             btnLaws.Size = new Size(94, 29);
             btnLaws.TabIndex = 4;
@@ -98,15 +99,16 @@
             // lsbFinalCases
             // 
             lsbFinalCases.FormattingEnabled = true;
-            lsbFinalCases.Location = new Point(698, 126);
+            lsbFinalCases.HorizontalScrollbar = true;
+            lsbFinalCases.Location = new Point(755, 126);
             lsbFinalCases.Name = "lsbFinalCases";
-            lsbFinalCases.Size = new Size(486, 184);
+            lsbFinalCases.Size = new Size(544, 184);
             lsbFinalCases.TabIndex = 5;
             lsbFinalCases.SelectedIndexChanged += lsbFinalCases_SelectedIndexChanged;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(563, 181);
+            btnAdd.Location = new Point(615, 180);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(94, 29);
             btnAdd.TabIndex = 6;
@@ -116,7 +118,7 @@
             // 
             // btnCombine
             // 
-            btnCombine.Location = new Point(563, 234);
+            btnCombine.Location = new Point(615, 233);
             btnCombine.Name = "btnCombine";
             btnCombine.Size = new Size(94, 29);
             btnCombine.TabIndex = 7;
@@ -126,7 +128,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(1218, 271);
+            btnDelete.Location = new Point(1319, 275);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
             btnDelete.TabIndex = 8;
@@ -136,7 +138,7 @@
             // 
             // btnUp
             // 
-            btnUp.Location = new Point(1218, 135);
+            btnUp.Location = new Point(1319, 139);
             btnUp.Name = "btnUp";
             btnUp.Size = new Size(94, 29);
             btnUp.TabIndex = 9;
@@ -146,7 +148,7 @@
             // 
             // btnDown
             // 
-            btnDown.Location = new Point(1218, 184);
+            btnDown.Location = new Point(1319, 188);
             btnDown.Name = "btnDown";
             btnDown.Size = new Size(94, 29);
             btnDown.TabIndex = 10;
@@ -156,7 +158,7 @@
             // 
             // btnGenerate
             // 
-            btnGenerate.Location = new Point(799, 356);
+            btnGenerate.Location = new Point(857, 356);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(94, 29);
             btnGenerate.TabIndex = 11;
@@ -166,7 +168,7 @@
             // 
             // btnRename
             // 
-            btnRename.Location = new Point(699, 356);
+            btnRename.Location = new Point(757, 356);
             btnRename.Name = "btnRename";
             btnRename.Size = new Size(94, 29);
             btnRename.TabIndex = 12;
@@ -176,7 +178,7 @@
             // 
             // btnDeleteCase
             // 
-            btnDeleteCase.Location = new Point(423, 405);
+            btnDeleteCase.Location = new Point(474, 405);
             btnDeleteCase.Name = "btnDeleteCase";
             btnDeleteCase.Size = new Size(94, 29);
             btnDeleteCase.TabIndex = 13;
@@ -186,7 +188,7 @@
             // 
             // btnInsertNormative
             // 
-            btnInsertNormative.Location = new Point(1055, 356);
+            btnInsertNormative.Location = new Point(1170, 356);
             btnInsertNormative.Name = "btnInsertNormative";
             btnInsertNormative.Size = new Size(129, 29);
             btnInsertNormative.TabIndex = 14;
@@ -198,7 +200,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1348, 469);
+            ClientSize = new Size(1440, 469);
             Controls.Add(btnInsertNormative);
             Controls.Add(btnDeleteCase);
             Controls.Add(btnRename);

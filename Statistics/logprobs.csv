@@ -1,5 +1,277 @@
 category,principle,goal,logprob
-RA,1,0,-2.85641e-05
-RA,2,1,-0.000261336
-COMBINED,1,0,-2.85641e-05
-COMBINED,2,1,-0.000261336
+ISO/IEC 27701:2025,1,0,0
+ISO/IEC 27701:2025,1,1,0
+ISO/IEC 27701:2025,1,2,0
+ISO/IEC 27701:2025,1,3,0
+ISO/IEC 27701:2025,2,4,0
+ISO/IEC 27701:2025,2,5,0
+ISO/IEC 27701:2025,2,6,0
+ISO/IEC 27701:2025,3,7,0
+ISO/IEC 27701:2025,3,8,0
+ISO/IEC 27701:2025,3,9,0
+ISO/IEC 27701:2025,4,10,0
+ISO/IEC 27701:2025,4,11,0
+ISO/IEC 27701:2025,4,12,0
+ISO/IEC 27701:2025,4,13,0
+ISO/IEC 27701:2025,4,14,0
+ISO/IEC 27701:2025,5,15,0
+ISO/IEC 27701:2025,5,16,0
+ISO/IEC 27701:2025,5,17,0
+ISO/IEC 27701:2025,6,18,0
+ISO/IEC 27701:2025,6,19,0
+ISO/IEC 27701:2025,6,20,0
+ISO/IEC 27701:2025,7,21,0
+ISO/IEC 27701:2025,7,22,0
+GDPR (Europe),1,0,-0.002883
+GDPR (Europe),1,1,-0.002197
+GDPR (Europe),1,2,-0.000612
+GDPR (Europe),1,3,-0.275832
+GDPR (Europe),2,4,-0.07097
+GDPR (Europe),2,5,-1.2e-05
+GDPR (Europe),2,6,-1e-06
+GDPR (Europe),3,7,0.0
+GDPR (Europe),3,8,-0.000173
+GDPR (Europe),3,9,-0.006758
+GDPR (Europe),4,10,-7e-06
+GDPR (Europe),4,11,-8e-06
+GDPR (Europe),4,12,-1.9e-05
+GDPR (Europe),4,13,0.0
+GDPR (Europe),4,14,0.0
+GDPR (Europe),5,15,-1e-06
+GDPR (Europe),5,16,0.0
+GDPR (Europe),5,17,0.0
+GDPR (Europe),6,18,-0.000152
+GDPR (Europe),6,19,-0.00076
+GDPR (Europe),6,20,-2e-06
+GDPR (Europe),7,21,-2e-06
+GDPR (Europe),7,22,0.0
+Law 7593/25 (Paraguay),1,0,-54.3053
+Law 7593/25 (Paraguay),1,1,-0.162349
+Law 7593/25 (Paraguay),1,2,-54.3053
+Law 7593/25 (Paraguay),1,3,-54.3053
+Law 7593/25 (Paraguay),2,4,-54.3053
+Law 7593/25 (Paraguay),2,5,-0.028108
+Law 7593/25 (Paraguay),2,6,-54.3053
+Law 7593/25 (Paraguay),3,7,-0.251992
+Law 7593/25 (Paraguay),3,8,-54.3053
+Law 7593/25 (Paraguay),3,9,-54.3053
+Law 7593/25 (Paraguay),4,10,-1.0043
+Law 7593/25 (Paraguay),4,11,-54.3053
+Law 7593/25 (Paraguay),4,12,-54.3053
+Law 7593/25 (Paraguay),4,13,-54.3053
+Law 7593/25 (Paraguay),4,14,-54.3053
+Law 7593/25 (Paraguay),5,15,-0.73733
+Law 7593/25 (Paraguay),5,16,-0.000183
+Law 7593/25 (Paraguay),5,17,-0.000939
+Law 7593/25 (Paraguay),6,18,-1.3e-05
+Law 7593/25 (Paraguay),6,19,-54.3053
+Law 7593/25 (Paraguay),6,20,-54.3053
+Law 7593/25 (Paraguay),7,21,-0.000808
+Law 7593/25 (Paraguay),7,22,0.0
+Decree 1377 (Colombia),1,0,-32.7339
+Decree 1377 (Colombia),1,1,-0.43256
+Decree 1377 (Colombia),1,2,-32.7339
+Decree 1377 (Colombia),1,3,-32.7339
+Decree 1377 (Colombia),2,4,-32.7339
+Decree 1377 (Colombia),2,5,-0.00742
+Decree 1377 (Colombia),2,6,-0.00096
+Decree 1377 (Colombia),3,7,-0.530123
+Decree 1377 (Colombia),3,8,-32.7339
+Decree 1377 (Colombia),3,9,-32.7339
+Decree 1377 (Colombia),4,10,-0.950831
+Decree 1377 (Colombia),4,11,0.0
+Decree 1377 (Colombia),4,12,-32.7339
+Decree 1377 (Colombia),4,13,-0.029753
+Decree 1377 (Colombia),4,14,-2e-06
+Decree 1377 (Colombia),5,15,-0.000435
+Decree 1377 (Colombia),5,16,-0.061839
+Decree 1377 (Colombia),5,17,-0.000239
+Decree 1377 (Colombia),6,18,-0.05708
+Decree 1377 (Colombia),6,19,-32.7339
+Decree 1377 (Colombia),6,20,-32.7339
+Decree 1377 (Colombia),7,21,-0.075767
+Decree 1377 (Colombia),7,22,-2e-06
+Law 1581 (Colombia),1,0,-77.2344
+Law 1581 (Colombia),1,1,-0.163613
+Law 1581 (Colombia),1,2,-77.2344
+Law 1581 (Colombia),1,3,-77.2344
+Law 1581 (Colombia),2,4,-77.2344
+Law 1581 (Colombia),2,5,-77.2344
+Law 1581 (Colombia),2,6,-77.2344
+Law 1581 (Colombia),3,7,-77.2344
+Law 1581 (Colombia),3,8,-77.2344
+Law 1581 (Colombia),3,9,-77.2344
+Law 1581 (Colombia),4,10,-77.2344
+Law 1581 (Colombia),4,11,-77.2344
+Law 1581 (Colombia),4,12,-77.2344
+Law 1581 (Colombia),4,13,-77.2344
+Law 1581 (Colombia),4,14,-77.2344
+Law 1581 (Colombia),5,15,-1.1051
+Law 1581 (Colombia),5,16,-77.2344
+Law 1581 (Colombia),5,17,-77.2344
+Law 1581 (Colombia),6,18,-77.2344
+Law 1581 (Colombia),6,19,-77.2344
+Law 1581 (Colombia),6,20,-77.2344
+Law 1581 (Colombia),7,21,-0.561796
+Law 1581 (Colombia),7,22,0.0
+LOPDPPSO (México),1,0,-29.3681
+LOPDPPSO (México),1,1,-0.57773
+LOPDPPSO (México),1,2,-0.409912
+LOPDPPSO (México),1,3,-0.588861
+LOPDPPSO (México),2,4,-0.281722
+LOPDPPSO (México),2,5,-0.000181
+LOPDPPSO (México),2,6,0.0
+LOPDPPSO (México),3,7,-1e-06
+LOPDPPSO (México),3,8,-0.000558
+LOPDPPSO (México),3,9,-29.3681
+LOPDPPSO (México),4,10,-0.313326
+LOPDPPSO (México),4,11,0.0
+LOPDPPSO (México),4,12,-0.062106
+LOPDPPSO (México),4,13,-3e-06
+LOPDPPSO (México),4,14,0.0
+LOPDPPSO (México),5,15,-2e-06
+LOPDPPSO (México),5,16,0.0
+LOPDPPSO (México),5,17,-5e-06
+LOPDPPSO (México),6,18,-3e-06
+LOPDPPSO (México),6,19,-6.5e-05
+LOPDPPSO (México),6,20,-0.127107
+LOPDPPSO (México),7,21,0.0
+LOPDPPSO (México),7,22,0.0
+LFPDPPP (México),1,0,-99.145
+LFPDPPP (México),1,1,-99.145
+LFPDPPP (México),1,2,-99.145
+LFPDPPP (México),1,3,-1.18158
+LFPDPPP (México),2,4,-99.145
+LFPDPPP (México),2,5,-0.86881
+LFPDPPP (México),2,6,-0.00111
+LFPDPPP (México),3,7,-0.053167
+LFPDPPP (México),3,8,-99.145
+LFPDPPP (México),3,9,-99.145
+LFPDPPP (México),4,10,-0.484032
+LFPDPPP (México),4,11,-1e-06
+LFPDPPP (México),4,12,-0.038186
+LFPDPPP (México),4,13,-1.3e-05
+LFPDPPP (México),4,14,-5e-06
+LFPDPPP (México),5,15,-0.000217
+LFPDPPP (México),5,16,-0.001548
+LFPDPPP (México),5,17,-0.000263
+LFPDPPP (México),6,18,-9.2e-05
+LFPDPPP (México),6,19,-0.181811
+LFPDPPP (México),6,20,-0.003097
+LFPDPPP (México),7,21,-1e-06
+LFPDPPP (México),7,22,0.0
+RLOPDP (Ecuador),1,0,-88.4123
+RLOPDP (Ecuador),1,1,-0.581875
+RLOPDP (Ecuador),1,2,-88.4123
+RLOPDP (Ecuador),1,3,-88.4123
+RLOPDP (Ecuador),2,4,-88.4123
+RLOPDP (Ecuador),2,5,-88.4123
+RLOPDP (Ecuador),2,6,-88.4123
+RLOPDP (Ecuador),3,7,-88.4123
+RLOPDP (Ecuador),3,8,-88.4123
+RLOPDP (Ecuador),3,9,-88.4123
+RLOPDP (Ecuador),4,10,-88.4123
+RLOPDP (Ecuador),4,11,-88.4123
+RLOPDP (Ecuador),4,12,-88.4123
+RLOPDP (Ecuador),4,13,-88.4123
+RLOPDP (Ecuador),4,14,-88.4123
+RLOPDP (Ecuador),5,15,-0.783474
+RLOPDP (Ecuador),5,16,-5.9e-05
+RLOPDP (Ecuador),5,17,-0.00025
+RLOPDP (Ecuador),6,18,-0.106966
+RLOPDP (Ecuador),6,19,-0.205546
+RLOPDP (Ecuador),6,20,-88.4123
+RLOPDP (Ecuador),7,21,-88.4123
+RLOPDP (Ecuador),7,22,-0.576786
+LOPDP (Ecuador),1,0,-63.7406
+LOPDP (Ecuador),1,1,-0.252886
+LOPDP (Ecuador),1,2,-63.7406
+LOPDP (Ecuador),1,3,-63.7406
+LOPDP (Ecuador),2,4,-63.7406
+LOPDP (Ecuador),2,5,-63.7406
+LOPDP (Ecuador),2,6,-63.7406
+LOPDP (Ecuador),3,7,-0.344583
+LOPDP (Ecuador),3,8,-63.7406
+LOPDP (Ecuador),3,9,-63.7406
+LOPDP (Ecuador),4,10,-63.7406
+LOPDP (Ecuador),4,11,-63.7406
+LOPDP (Ecuador),4,12,-63.7406
+LOPDP (Ecuador),4,13,-1.36679
+LOPDP (Ecuador),4,14,-63.7406
+LOPDP (Ecuador),5,15,-0.43015
+LOPDP (Ecuador),5,16,-0.002976
+LOPDP (Ecuador),5,17,-0.037962
+LOPDP (Ecuador),6,18,-0.040245
+LOPDP (Ecuador),6,19,-0.001996
+LOPDP (Ecuador),6,20,-63.7406
+LOPDP (Ecuador),7,21,-0.045964
+LOPDP (Ecuador),7,22,0.0
+Law 21719 (Chile),1,0,-0.305639
+Law 21719 (Chile),1,1,-0.000139
+Law 21719 (Chile),1,2,-0.315314
+Law 21719 (Chile),1,3,-1.3
+Law 21719 (Chile),2,4,-0.269813
+Law 21719 (Chile),2,5,-5.9e-05
+Law 21719 (Chile),2,6,-1e-06
+Law 21719 (Chile),3,7,-4e-06
+Law 21719 (Chile),3,8,-72.1618
+Law 21719 (Chile),3,9,-0.64332
+Law 21719 (Chile),4,10,-0.002333
+Law 21719 (Chile),4,11,-0.026702
+Law 21719 (Chile),4,12,-0.000553
+Law 21719 (Chile),4,13,-1e-06
+Law 21719 (Chile),4,14,-3.2e-05
+Law 21719 (Chile),5,15,-1e-06
+Law 21719 (Chile),5,16,-3.8e-05
+Law 21719 (Chile),5,17,-2e-06
+Law 21719 (Chile),6,18,-0.000139
+Law 21719 (Chile),6,19,-72.1618
+Law 21719 (Chile),6,20,-72.1618
+Law 21719 (Chile),7,21,-0.603309
+Law 21719 (Chile),7,22,0.0
+Law 29733 (Perú),1,0,-40.9941
+Law 29733 (Perú),1,1,-0.481465
+Law 29733 (Perú),1,2,-0.064714
+Law 29733 (Perú),1,3,-40.9941
+Law 29733 (Perú),2,4,-40.9941
+Law 29733 (Perú),2,5,-1.08363
+Law 29733 (Perú),2,6,-40.9941
+Law 29733 (Perú),3,7,-40.9941
+Law 29733 (Perú),3,8,-40.9941
+Law 29733 (Perú),3,9,-40.9941
+Law 29733 (Perú),4,10,-40.9941
+Law 29733 (Perú),4,11,-40.9941
+Law 29733 (Perú),4,12,-40.9941
+Law 29733 (Perú),4,13,-0.259865
+Law 29733 (Perú),4,14,-0.005245
+Law 29733 (Perú),5,15,-0.00013
+Law 29733 (Perú),5,16,-40.9941
+Law 29733 (Perú),5,17,-40.9941
+Law 29733 (Perú),6,18,-40.9941
+Law 29733 (Perú),6,19,-40.9941
+Law 29733 (Perú),6,20,-40.9941
+Law 29733 (Perú),7,21,-40.9941
+Law 29733 (Perú),7,22,-0.285596
+Supreme Decree 016-2024-JUS (Perú),1,0,-72.8264
+Supreme Decree 016-2024-JUS (Perú),1,1,-0.184237
+Supreme Decree 016-2024-JUS (Perú),1,2,-0.418761
+Supreme Decree 016-2024-JUS (Perú),1,3,-0.631732
+Supreme Decree 016-2024-JUS (Perú),2,4,-0.528935
+Supreme Decree 016-2024-JUS (Perú),2,5,-0.014177
+Supreme Decree 016-2024-JUS (Perú),2,6,-4e-06
+Supreme Decree 016-2024-JUS (Perú),3,7,-0.000285
+Supreme Decree 016-2024-JUS (Perú),3,8,-72.8264
+Supreme Decree 016-2024-JUS (Perú),3,9,-0.669152
+Supreme Decree 016-2024-JUS (Perú),4,10,-1e-05
+Supreme Decree 016-2024-JUS (Perú),4,11,0.0
+Supreme Decree 016-2024-JUS (Perú),4,12,-2.9e-05
+Supreme Decree 016-2024-JUS (Perú),4,13,0.0
+Supreme Decree 016-2024-JUS (Perú),4,14,0.0
+Supreme Decree 016-2024-JUS (Perú),5,15,0.0
+Supreme Decree 016-2024-JUS (Perú),5,16,-1.1e-05
+Supreme Decree 016-2024-JUS (Perú),5,17,-9e-06
+Supreme Decree 016-2024-JUS (Perú),6,18,-5.3e-05
+Supreme Decree 016-2024-JUS (Perú),6,19,-0.022685
+Supreme Decree 016-2024-JUS (Perú),6,20,-0.005999
+Supreme Decree 016-2024-JUS (Perú),7,21,-2e-06
+Supreme Decree 016-2024-JUS (Perú),7,22,0.0

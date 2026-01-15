@@ -87,15 +87,15 @@
             grbComboBoxes.Controls.Add(cmbNormatives);
             grbComboBoxes.Controls.Add(lblCmbsLaws);
             grbComboBoxes.Controls.Add(lblCmbNormatives);
-            grbComboBoxes.Location = new Point(194, 38);
+            grbComboBoxes.Location = new Point(172, 32);
             grbComboBoxes.Name = "grbComboBoxes";
-            grbComboBoxes.Size = new Size(1032, 125);
+            grbComboBoxes.Size = new Size(1235, 125);
             grbComboBoxes.TabIndex = 0;
             grbComboBoxes.TabStop = false;
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(863, 29);
+            btnSearch.Location = new Point(1003, 25);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(94, 29);
             btnSearch.TabIndex = 4;
@@ -108,7 +108,7 @@
             cmbLaws.FormattingEnabled = true;
             cmbLaws.Location = new Point(185, 74);
             cmbLaws.Name = "cmbLaws";
-            cmbLaws.Size = new Size(646, 28);
+            cmbLaws.Size = new Size(784, 28);
             cmbLaws.TabIndex = 3;
             cmbLaws.SelectedIndexChanged += cmbLaws_SelectedIndexChanged;
             // 
@@ -117,7 +117,7 @@
             cmbNormatives.FormattingEnabled = true;
             cmbNormatives.Location = new Point(186, 23);
             cmbNormatives.Name = "cmbNormatives";
-            cmbNormatives.Size = new Size(645, 28);
+            cmbNormatives.Size = new Size(783, 28);
             cmbNormatives.TabIndex = 2;
             cmbNormatives.SelectedIndexChanged += cmbNormatives_SelectedIndexChanged;
             // 
@@ -334,7 +334,7 @@
             grbCase.Controls.Add(lblAlias);
             grbCase.Controls.Add(lblId);
             grbCase.Controls.Add(lblDescription);
-            grbCase.Location = new Point(898, 240);
+            grbCase.Location = new Point(896, 231);
             grbCase.Name = "grbCase";
             grbCase.Size = new Size(604, 562);
             grbCase.TabIndex = 3;

@@ -54,7 +54,7 @@
             // txtNameLaw
             // 
             txtNameLaw.Location = new Point(143, 51);
-            txtNameLaw.MaxLength = 50;
+            txtNameLaw.MaxLength = 500;
             txtNameLaw.Name = "txtNameLaw";
             txtNameLaw.Size = new Size(714, 27);
             txtNameLaw.TabIndex = 0;
@@ -97,7 +97,7 @@
             // 
             // btnFindLaw
             // 
-            btnFindLaw.Location = new Point(863, 273);
+            btnFindLaw.Location = new Point(874, 273);
             btnFindLaw.Name = "btnFindLaw";
             btnFindLaw.Size = new Size(94, 29);
             btnFindLaw.TabIndex = 6;
@@ -117,15 +117,15 @@
             // cmbLaws
             // 
             cmbLaws.FormattingEnabled = true;
-            cmbLaws.Location = new Point(122, 38);
+            cmbLaws.Location = new Point(87, 34);
             cmbLaws.Name = "cmbLaws";
-            cmbLaws.Size = new Size(679, 28);
+            cmbLaws.Size = new Size(714, 28);
             cmbLaws.TabIndex = 9;
             cmbLaws.SelectedIndexChanged += cmbLaws_SelectedIndexChanged;
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(807, 38);
+            btnSearch.Location = new Point(818, 34);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(94, 29);
             btnSearch.TabIndex = 10;
@@ -220,7 +220,7 @@
             // 
             // btnView
             // 
-            btnView.Location = new Point(863, 181);
+            btnView.Location = new Point(874, 181);
             btnView.Name = "btnView";
             btnView.Size = new Size(94, 29);
             btnView.TabIndex = 17;
@@ -230,7 +230,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(863, 334);
+            btnDelete.Location = new Point(874, 334);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 35);
             btnDelete.TabIndex = 8;
