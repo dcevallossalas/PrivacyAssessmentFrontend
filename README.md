@@ -17,7 +17,7 @@ In order to use the frontend component, first the backend component, available i
 Next, modify the App.config file to determine the general parameters of execution of the frontend application.
 
 - protocol: Determine if the protocol to be used with the backend component will be **http** or **https**.
-- endpoint: Set the name domain or the IP address where the backend component is running (e.g., 192.168.1.75).
+- endpoint: Set the name domain or the IP address (and port number if it is different to 80) where the backend component is running (e.g., 192.168.1.75 or 192.168.1.75:8080).
 - apiKey: Set the OpenAI's api key in order to use different GPT models.
 - path: Set the path to the statistics folder where the results of analysis will be stored (e.g., E:\PrivacyAssessmentFrontend\Statistics). The file Statistics.Rmd must be within this folder.
 - rscript: Set the name of the R core script to execute remotely the R notebook (e.g., main.R).
