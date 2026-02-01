@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace AssessmentLibrary.AssessmentLogic
 {
+    /// <summary>
+    /// Class GptQuery
+    /// Model of a query to be executed by GPT
+    /// </summary>
     public class GptQuery
     {
         public int idCase {  get; set; }

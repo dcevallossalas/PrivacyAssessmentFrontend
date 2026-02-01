@@ -11,23 +11,30 @@ using AssessmentLibrary.AssessmentModel;
 
 namespace PrivacyAssessment
 {
+    /// <summary>
+    /// Class FrmAlias
+    /// Form to determine the alias to be used for the R statistics
+    /// </summary>
     public partial class FrmAlias : Form
     {
         public string alias = string.Empty;
         public string name = string.Empty;
         CaseItem item = null;
 
+        // Constructor
         public FrmAlias()
         {
             InitializeComponent();
         }
 
+        // Constructor with an item component
         public FrmAlias(CaseItem item)
         {
             InitializeComponent();
             this.item = item;
         }
 
+        // Displays general information when the form loads
         private void FrmAlias_Load(object sender, EventArgs e)
         {
             if (item != null)
@@ -37,6 +44,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Sets the new name for the alias
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtName.Text))

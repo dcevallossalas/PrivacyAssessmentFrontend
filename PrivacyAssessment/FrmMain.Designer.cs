@@ -74,7 +74,7 @@
             btnManage.TabIndex = 2;
             btnManage.Text = "Manage";
             btnManage.UseVisualStyleBackColor = true;
-            btnManage.Click += btnManage_Click_1;
+            btnManage.Click += btnManage_Click;
             // 
             // btnNormatives
             // 
@@ -221,7 +221,6 @@
             Name = "FrmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PRIVIA Normative Analyzer (PNA)";
-            Load += FrmMain_Load;
             ResumeLayout(false);
         }
 

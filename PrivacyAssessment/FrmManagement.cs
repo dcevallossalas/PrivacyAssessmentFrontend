@@ -17,22 +17,29 @@ using AssessmentLibrary.AssessmentModel;
 
 namespace PrivacyAssessment
 {
+    /// <summary>
+    /// Class Management
+    /// Manages the information of cases executing queries with GPT
+    /// </summary>
     public partial class FrmManagement : Form
     {
         int typeNomatives = 0;
         int typeLaws = 1;
 
+        // Constructor
         public FrmManagement()
         {
             InitializeComponent();
             loadData();
         }
 
+        // Searches the information of previously created normatives and laws
         private void btnSearch_Click(object sender, EventArgs e)
         {
             loadData();
         }
 
+        // Sets a blocked mode to avoid the user to perform actions
         private void setBlocked()
         {
             cmbNormatives.Items.Clear();
@@ -74,6 +81,7 @@ namespace PrivacyAssessment
             btnNoncompliancesView.Enabled = false;
         }
 
+        // Sets the modify mode in order to perform actions with GPT
         private void setModifyMode()
         {
             txtName.ReadOnly = true; ;
@@ -116,6 +124,7 @@ namespace PrivacyAssessment
             btnCreate.Enabled = false;
         }
 
+        // Sets the create mode in order to create a new case of analysis
         private void setCreateMode()
         {
             txtId.Text = string.Empty;
@@ -137,6 +146,7 @@ namespace PrivacyAssessment
             btnCreate.Enabled = true;
         }
 
+        // Loads a previously defined data of normatives and laws
         private void loadData()
         {
             // Normatives
@@ -224,16 +234,19 @@ namespace PrivacyAssessment
             }
         }
 
+        // Changes the selected normative
         private void cmbNormatives_SelectedIndexChanged(object sender, EventArgs e)
         {
             changeCaseStudy();
         }
 
+        // Changes the selected law
         private void cmbLaws_SelectedIndexChanged(object sender, EventArgs e)
         {
             changeCaseStudy();
         }
 
+        // Displays the information of the case study corresponding to the selected normative and law
         private void changeCaseStudy()
         {
             int idNormative = 0;
@@ -337,6 +350,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Creates a new case study
         private void btnCreate_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtName.Text))
@@ -384,36 +398,44 @@ namespace PrivacyAssessment
             }
         }
 
+        // Determines the identified categories with GPT
         private void btnGpt_Click(object sender, EventArgs e)
         {
             Generate(0);
         }
 
+        // Determines compliances with GPT
         private void btnCompliances_Click(object sender, EventArgs e)
         {
             Generate(1);
         }
 
+        // Determines noncompliances with GPT
         private void btnNoncompliances_Click(object sender, EventArgs e)
         {
             Generate(2);
         }
 
+        // Visualizes the results of identified categories
         private void btnGptView_Click(object sender, EventArgs e)
         {
             ViewQuery(2, 0);
         }
+
+        // Visualizes the results of compliances
 
         private void btnCompliancesView_Click(object sender, EventArgs e)
         {
             ViewQuery(2, 1);
         }
 
+        // Visualizes the results of noncompliances
         private void btnNoncompliancesView_Click(object sender, EventArgs e)
         {
             ViewQuery(2, 2);
         }
 
+        // Generates a query to be performed with GPT
         private void Generate(int type)
         {
             string message = "Do you want to peform this operation?";
@@ -467,6 +489,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Visualizes the results obtained using GPT
         private void ViewQuery(int type, int subtype)
         {
             Response response = Assessment.generateView(type, subtype, int.Parse(txtId.Text));

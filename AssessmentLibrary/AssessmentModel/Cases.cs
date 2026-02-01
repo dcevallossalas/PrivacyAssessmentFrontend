@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace AssessmentLibrary.AssessmentModel
 {
+    /// <summary>
+    /// Class Cases
+    /// Model of a list of cases
+    /// </summary>
     public class Cases
     {
         public int code {  get; set; }

@@ -11,8 +11,13 @@ using RestSharp;
 
 namespace AssessmentLibrary.AssessmentLogic
 {
+    /// <summary>
+    /// Class Assessment
+    /// It has available a set of methods in order to interconnect to the backend component
+    /// </summary>
     public class Assessment
     {
+        // Generates a file for a set of values case items
         public static Response generateFiles(List<CaseItem> values)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -38,6 +43,7 @@ namespace AssessmentLibrary.AssessmentLogic
             }
         }
 
+        // Generates a view with the text corresponding to a set of type, subtype and id component
         public static Response generateView(int type, int subtype, int id)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -61,6 +67,7 @@ namespace AssessmentLibrary.AssessmentLogic
             }
         }
 
+        // Generates a query to be executed by GPT
         public static Response generateQuery(GptQuery gptQuery)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -86,6 +93,7 @@ namespace AssessmentLibrary.AssessmentLogic
             }
         }
 
+        // Deletes a case of analysis given a determined id
         public static Response deleteCase(int id)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -109,6 +117,7 @@ namespace AssessmentLibrary.AssessmentLogic
             }
         }
 
+        // Creates a new document corresponding to a law or a normative
         public static Response createCase(Document document)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -134,6 +143,7 @@ namespace AssessmentLibrary.AssessmentLogic
             }
         }
 
+        // Gets the corresponding case corresponding to a normative or a law
         public static Document getCase(int idNormative, int idLaw)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -157,6 +167,7 @@ namespace AssessmentLibrary.AssessmentLogic
             }
         }
 
+        // Gets the current version of an id case
         public static Response getVersion(int id)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -180,6 +191,7 @@ namespace AssessmentLibrary.AssessmentLogic
             }
         }
 
+        // Gets all possible cases of analysis
         public static Cases getCases()
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -203,6 +215,7 @@ namespace AssessmentLibrary.AssessmentLogic
             }
         }
 
+        // Creates a document corresponding to a law or normative in a given path
         public static Response createDocument(Document document,string path)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -230,6 +243,8 @@ namespace AssessmentLibrary.AssessmentLogic
                 };
             }
         }
+
+        // Gets a document according to its type and id
         public static Document getDocument(int docType, int id)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -253,6 +268,7 @@ namespace AssessmentLibrary.AssessmentLogic
             }
         }
 
+        // Gets all possible documents according to its type
         public static Documents getDocuments(int docType)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -276,6 +292,7 @@ namespace AssessmentLibrary.AssessmentLogic
             }
         }
 
+        // Deletes a document according to its type and id
         public static Response deleteDocument(int docType, int id)
         {
             string endpoint = ConfigurationManager.AppSettings["protocol"] + "://" + ConfigurationManager.AppSettings["endpoint"];
@@ -298,7 +315,5 @@ namespace AssessmentLibrary.AssessmentLogic
                 };
             }
         }
-
-        
     }
 }

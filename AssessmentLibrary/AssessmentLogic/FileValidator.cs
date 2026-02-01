@@ -10,8 +10,13 @@ namespace AssessmentLibrary.AssessmentLogic
     using System.IO;
     using System.Linq;
 
+    /// <summary>
+    /// Class FileValidator
+    /// Validates if a file path is valid in order to avoid storage problems
+    /// </summary>
     public static class FileValidator
     {
+        // Determines if a file name is well formated for being used as part of a path
         public static bool IsValidFileName(string fileName)
         {
             if (string.IsNullOrWhiteSpace(fileName))
@@ -19,16 +24,16 @@ namespace AssessmentLibrary.AssessmentLogic
 
             fileName = fileName.Trim();
 
-            // No debe terminar en punto
+            // File must not end in point
             if (fileName.Contains("."))
                 return false;
 
-            // Verifica caracteres inválidos
+            // Verifies valid characters
             char[] invalidChars = Path.GetInvalidFileNameChars();
             if (fileName.IndexOfAny(invalidChars) >= 0)
                 return false;
 
-            // Verifica nombres reservados (Windows)
+            // Verifies valid names (Windows)
             string[] reservedNames = new string[]
             {
             "CON", "PRN", "AUX", "NUL",
@@ -43,5 +48,4 @@ namespace AssessmentLibrary.AssessmentLogic
             return true;
         }
     }
-
 }

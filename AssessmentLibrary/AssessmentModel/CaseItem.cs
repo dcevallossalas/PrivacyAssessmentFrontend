@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace AssessmentLibrary.AssessmentModel
 {
+    /// <summary>
+    /// Class CaseItem
+    /// Model of a item correspoding to a case of analysis
+    /// </summary>
     public class CaseItem
     {
         public int id { get; set; }
@@ -35,6 +39,7 @@ namespace AssessmentLibrary.AssessmentModel
         public List<int> subnormatives { get; set; }
         public List<int> sublaws { get; set; }
 
+        // Determine how the general information of the item must be displayed
         public override string ToString()
         {
             if (id > 0)

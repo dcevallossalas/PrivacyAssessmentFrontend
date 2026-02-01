@@ -68,7 +68,7 @@ df <- data.frame()
 
 for (umbral in ct) {
   data_filtered <- data %>%
-    filter(exp(logprob) > umbral & logprob > -10)
+    filter(exp(logprob) >= umbral & logprob > -10)
   
   count <- data_filtered %>%
     group_by(category) %>%
@@ -109,7 +109,7 @@ df <- data.frame()
 
 for (umbral in ct) {
   data_filtered <- data %>%
-    filter(exp(logprob) > umbral & logprob > -10)
+    filter(exp(logprob) >= umbral & logprob > -10)
   
   count <- data_filtered %>%
     group_by(category) %>%
@@ -173,6 +173,7 @@ for (i in 1:length(clauses)) {
   partial$category <- factor(partial$category, levels = categories$category)
   
   pictureclause <- ggplot(partial, aes(x = category, y = subclause_count, fill = category))+
+  #pictureclause <- ggplot(partial, aes(x = category, y = subclause_count))+
     geom_bar(stat="identity", position=position_dodge(width=0.9), width=0.9, show.legend = FALSE)+
     geom_text(aes(label = subclause_count),
             position = position_dodge(width = 0.9),

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AssessmentLibrary.AssessmentModel
 {
+    /// <summary>
+    /// Model of a list of documents
+    /// </summary>
     public class Documents
     {
         public int code {  get; set; }
@@ -13,6 +16,9 @@ namespace AssessmentLibrary.AssessmentModel
         public List<Document> documents {  get; set; }
     }
 
+    /// <summary>
+    /// Model of a document
+    /// </summary>
     public class Document
     {
         public int code { get; set; }
@@ -38,6 +44,9 @@ namespace AssessmentLibrary.AssessmentModel
         public List<Principle> principles { get; set; }
     }
 
+    /// <summary>
+    /// Model of a principle of a previously loaded normative
+    /// </summary>
     public class Principle
     {
         public int principle { get; set; }

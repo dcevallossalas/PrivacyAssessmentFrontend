@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace AssessmentLibrary.AssessmentModel
 {
+    /// <summary>
+    /// Class ComboboxItem
+    /// Model of an item from a combobox
+    /// </summary>
     public class ComboBoxItem
     {
         public object Value { get; set; }
@@ -13,6 +17,7 @@ namespace AssessmentLibrary.AssessmentModel
         public string Alias { get; set; }
         public string Name { get; set; }
 
+        // Define how the information of the combobox must be displayed
         public override string ToString()
         {
             return Text;

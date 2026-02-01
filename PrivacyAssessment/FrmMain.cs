@@ -17,8 +17,13 @@ using static System.Windows.Forms.DataFormats;
 
 namespace PrivacyAssessment
 {
+    /// <summary>
+    /// Class FrmMain
+    /// Manages the cases of analysis in order to display the final results
+    /// </summary>
     public partial class FrmMain : Form
     {
+        // Constructor
         public FrmMain()
         {
             InitializeComponent();
@@ -26,15 +31,16 @@ namespace PrivacyAssessment
             setFinalDisable();
         }
 
+        // Establishes a blocked mode in order to avoid the user to perform actions
         public void setBlocked()
         {
             lsbCases.Items.Clear();
-            //btnManage.Enabled = false;
             btnAdd.Enabled = false;
             btnCombine.Enabled = false;
             btnDeleteCase.Enabled = false;
         }
 
+        // Enables the form in order to allow the user to perform actions
         public void setEnable()
         {
             btnManage.Enabled = true;
@@ -43,6 +49,7 @@ namespace PrivacyAssessment
             btnDeleteCase.Enabled = true;
         }
 
+        // Enables the actions to manipulate the final selected case items
         public void setFinalEnable()
         {
             btnRename.Enabled = true;
@@ -75,6 +82,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Disables the actions to manipulate the final selected case items
         public void setFinalDisable()
         {
             btnRename.Enabled = false;
@@ -93,11 +101,13 @@ namespace PrivacyAssessment
             btnGenerate.Enabled = false;
         }
 
+        // Searches the previosuly created cases
         private void btnSearch_Click(object sender, EventArgs e)
         {
             SearchCases();
         }
 
+        // Searches the previously created cases
         private void SearchCases()
         {
             Cases cases = Assessment.getCases();
@@ -127,6 +137,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Enables or disables the allowed actions according to the selected cases
         private void lsbCases_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lsbCases.SelectedIndex != -1 && lsbCases.Items.Count > 0)
@@ -145,11 +156,13 @@ namespace PrivacyAssessment
             }
         }
 
+        // Adds a new case
         private void btnAdd_Click(object sender, EventArgs e)
         {
             addItems();
         }
 
+        // Adds a new case
         private void addItems()
         {
             var items = lsbCases.SelectedItems;
@@ -203,6 +216,7 @@ namespace PrivacyAssessment
                 setFinalState();
         }
 
+        // Determines if a case item has been previously selected
         private bool itemExists(CaseItem caseitem)
         {
             var items = lsbFinalCases.Items;
@@ -218,6 +232,7 @@ namespace PrivacyAssessment
             return false;
         }
 
+        // Deletes a previously selected case item
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (lsbFinalCases.SelectedIndex != -1)
@@ -230,11 +245,13 @@ namespace PrivacyAssessment
             }
         }
 
+        // Sets the final state of the window according to the selected case
         private void lsbFinalCases_SelectedIndexChanged(object sender, EventArgs e)
         {
             setFinalState();
         }
 
+        // Sets the final state of the form
         private void setFinalState()
         {
             if (lsbFinalCases.SelectedIndex != -1)
@@ -247,6 +264,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Sets a previously selected case of analysis one position up
         private void btnUp_Click(object sender, EventArgs e)
         {
             int index = lsbFinalCases.SelectedIndex;
@@ -260,6 +278,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Sets a previously selected case of analysis one position down
         private void btnDown_Click(object sender, EventArgs e)
         {
             int index = lsbFinalCases.SelectedIndex;
@@ -273,6 +292,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Renames a selected case of analysis
         private void btnRename_Click(object sender, EventArgs e)
         {
             if (lsbFinalCases.SelectedIndex != -1)
@@ -300,6 +320,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Combines two or more selected case of analysis in order to performa a combined analysis
         private void btnCombine_Click(object sender, EventArgs e)
         {
             if (lsbCases.SelectedItems.Count >= 2)
@@ -354,7 +375,7 @@ namespace PrivacyAssessment
                     return;
                 }
 
-                // Check repetition in final list box
+                // Checks repetition in final list box
                 bool repeated = false;
                 string alias_repeated = string.Empty;
 
@@ -408,12 +429,14 @@ namespace PrivacyAssessment
             }
         }
 
+        // Gets the curret version of previously selected case of analysis
         private Response itemWasAnalyzed(int id)
         {
             Response response = Assessment.getVersion(id);
             return response;
         }
 
+        // Displays a window for managing the information of normatives
         private void btnNormatives_Click(object sender, EventArgs e)
         {
             FrmNormatives frmNormatives = new FrmNormatives();
@@ -451,6 +474,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Displays a window for managing the information of laws
         private void btnLaws_Click(object sender, EventArgs e)
         {
             FrmLaws frmLaws = new FrmLaws();
@@ -488,11 +512,7 @@ namespace PrivacyAssessment
             }
         }
 
-        private void FrmMain_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        // Deletes a previously created case of analysis
         private void btnDeleteCase_Click(object sender, EventArgs e)
         {
             int count = lsbCases.SelectedItems.Count;
@@ -567,6 +587,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Updates the current state of the controls of the form
         public void UpdateControls()
         {
             if (lsbCases.Items.Count <= 0)
@@ -591,6 +612,7 @@ namespace PrivacyAssessment
 
         }
 
+        // Displays a new window with the information to insert a normative as a reference for the results
         private void btnInsertNormative_Click(object sender, EventArgs e)
         {
             List<int> addedNormatives = new List<int>();
@@ -656,17 +678,14 @@ namespace PrivacyAssessment
             }
         }
 
+        // Displays a window of management of cases
         private void btnManage_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnManage_Click_1(object sender, EventArgs e)
         {
             FrmManagement frmManage = new FrmManagement();
             frmManage.ShowDialog();
         }
 
+        // Consolidates the results for all selected case items and generate a dashborad with the results
         private void btnGenerate_Click(object sender, EventArgs e)
         {
             var items = lsbFinalCases.Items;
@@ -702,6 +721,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Opens a browser in a new window to visualize the results
         private void GenerateDashboard()
         {
             try

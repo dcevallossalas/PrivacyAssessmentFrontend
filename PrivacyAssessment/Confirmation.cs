@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace PrivacyAssessment
 {
+    /// <summary>
+    /// Class Confirmation
+    /// Displays a window with a message for the user in order to determine if the action must be performed
+    /// </summary>
     public class Confirmation
     {
+        // Displays a dialog window showing a message and requiring confirmation to continue with an action
         public static DialogResult ShowCustomYesNo(string message, string title, string yesText = "Yes", string noText = "No")
         {
             Form prompt = new Form()
@@ -33,6 +38,5 @@ namespace PrivacyAssessment
 
             return prompt.ShowDialog();
         }
-
     }
 }

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace AssessmentLibrary.AssessmentModel
 {
+    /// <summary>
+    /// Class Response
+    /// Model of a Response from the backend component
+    /// </summary>
     public class Response
     {
         public int code { get; set; }

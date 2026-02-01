@@ -15,16 +15,22 @@ using Document = AssessmentLibrary.AssessmentModel.Document;
 
 namespace PrivacyAssessment
 {
+    /// <summary>
+    /// Class FrmNormatives
+    /// Form to create a new normative or visualize a previously created normative
+    /// </summary>
     public partial class FrmNormatives : Form
     {
         private int type = 0;
         public List<int> deletes = new List<int>();
 
+        // Constructor
         public FrmNormatives()
         {
             InitializeComponent();
         }
 
+        // Allows the user to browse files to selected the normative to be loaded
         private void btnFindNormative_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
@@ -45,6 +51,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Loads the new normative
         private void btnLoadNormative_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtNameNormative.Text))
@@ -118,6 +125,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Sets a blocked mode to avoid the user to perform actions
         private void setBlocked()
         {
             cmbNormatives.Items.Clear();
@@ -148,6 +156,8 @@ namespace PrivacyAssessment
             lsbCategories.Items.Clear();
             lsbCategories.Enabled = false;
         }
+
+        // Sets a create mode to allow the user to load a new normative
         private void setCreateMode()
         {
             cmbNormatives.Enabled = true;
@@ -177,6 +187,8 @@ namespace PrivacyAssessment
             lsbCategories.Enabled = true;
             txtNameNormative.Select();
         }
+
+        // Allows the user to perform changes
         private void setModifyMode()
         {
             cmbNormatives.Enabled = true;
@@ -201,6 +213,7 @@ namespace PrivacyAssessment
             lsbCategories.Enabled = false;
         }
 
+        // Loads a new normative according to the information indicated by the user
         private void LoadNormatives(int index)
         {
             Documents documents = Assessment.getDocuments(type);
@@ -240,6 +253,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Displays the information of previosuly selected normative or allows to create a new one
         private void cmbNormatives_SelectedIndexChanged(object sender, EventArgs e)
         {
             int id = int.Parse((cmbNormatives.SelectedItem as ComboBoxItem).Value.ToString());
@@ -276,16 +290,19 @@ namespace PrivacyAssessment
             }
         }
 
+        // Loads the information of current normatives
         private void Normatives_Load(object sender, EventArgs e)
         {
             LoadNormatives(0);
         }
 
+        // Searchs the information of current normatives
         private void btnSearch_Click(object sender, EventArgs e)
         {
             LoadNormatives(0);
         }
 
+        // Adds a new category of principles
         private void btnAddCategory_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtPrinciple.Text))
@@ -346,6 +363,7 @@ namespace PrivacyAssessment
             lsbCategories.Items.Add("Principle " + principle + " from category: " + categoryFrom + " to " + categoryTo);
         }
 
+        // Deletes a previously created category
         private void btnDeleteCategory_Click(object sender, EventArgs e)
         {
             if (lsbCategories.SelectedIndex != -1)
@@ -356,6 +374,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Defines the new state of the form according to the categories of principles selected
         private void lsbCategories_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lsbCategories.SelectedIndex != -1)
@@ -364,6 +383,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Deletes the selected normative
         private void btnDelete_Click(object sender, EventArgs e)
         {
             DialogResult result = Confirmation.ShowCustomYesNo("Do you want to remove this normative?", "Confirmation", "Yes", "No");
@@ -385,6 +405,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Validates that the information of the principle is correct
         private void txtPrinciple_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -393,6 +414,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Validates if the information of the category_from field is correct
         private void txtCategoryFrom_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -401,6 +423,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Validates if the information of the category_to field is correct
         private void txtCategoryTo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -409,6 +432,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Validates that the information of the description field is correct
         private void txtDescription_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsControl(e.KeyChar) && e.KeyChar != (char)Keys.Back)
@@ -417,6 +441,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Visualizes the previously created normative
         private void btnView_Click(object sender, EventArgs e)
         {
             Response response = Assessment.generateView(0, 0, int.Parse(txtId.Text));

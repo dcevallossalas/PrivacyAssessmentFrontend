@@ -14,16 +14,22 @@ using Document = AssessmentLibrary.AssessmentModel.Document;
 
 namespace PrivacyAssessment
 {
+    /// <summary>
+    /// Clas FrmLaws
+    /// Creates a new law or display the information of a previously created law
+    /// </summary>
     public partial class FrmLaws : Form
     {
         private int type = 1;
         public List<int> deletes = new List<int>();
 
+        // Constructor
         public FrmLaws()
         {
             InitializeComponent();
         }
 
+        // Finds the current laws previously created
         private void btnFindLaw_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
@@ -44,6 +50,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Creates a new normative
         private void btnLoadLaw_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtNameLaw.Text))
@@ -93,6 +100,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Establishes a blocked mode of the windows in order to avoid the user to perform actions
         private void setBlocked()
         {
             cmbLaws.Items.Clear();
@@ -113,6 +121,8 @@ namespace PrivacyAssessment
             txtId.Text = string.Empty;
             txtId.ReadOnly = true;
         }
+
+        // Establishes a create mode in order to allow the user to create a new law
         private void setCreateMode()
         {
             cmbLaws.Enabled = true;
@@ -133,6 +143,7 @@ namespace PrivacyAssessment
             txtNameLaw.Select();
         }
 
+        // Allows the user to modify a previously created law
         private void setModifyMode()
         {
             cmbLaws.Enabled = true;
@@ -148,6 +159,7 @@ namespace PrivacyAssessment
             txtId.ReadOnly = true;
         }
 
+        // Loads a new law
         private void LoadLaws(int index)
         {
             Documents documents = Assessment.getDocuments(type);
@@ -187,6 +199,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Displays the information of a previously selected law
         private void cmbLaws_SelectedIndexChanged(object sender, EventArgs e)
         {
             int id = int.Parse((cmbLaws.SelectedItem as ComboBoxItem).Value.ToString());
@@ -214,16 +227,19 @@ namespace PrivacyAssessment
             }
         }
 
+        // Loads the information of the laws
         private void Laws_Load(object sender, EventArgs e)
         {
             LoadLaws(0);
         }
 
+        // Executes a new search of previously created laws
         private void btnSearch_Click(object sender, EventArgs e)
         {
             LoadLaws(0);
         }
 
+        // Deletes a selected law
         private void btnDelete_Click(object sender, EventArgs e)
         {
             DialogResult result = Confirmation.ShowCustomYesNo("Do you want to remove this law?", "Confirmation", "Yes", "No");
@@ -245,6 +261,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Validates infomation entered in the description field
         private void txtDescription_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsControl(e.KeyChar) && e.KeyChar != (char)Keys.Back)
@@ -253,6 +270,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Presents a new window in order to visualize the content of the law
         private void btnView_Click(object sender, EventArgs e)
         {
             Response response = Assessment.generateView(1, 0, int.Parse(txtId.Text));

@@ -13,6 +13,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace PrivacyAssessment
 {
+    /// <summary>
+    /// Class FrmInsertNormative
+    /// Insert a normative for being used as a referenced
+    /// </summary>
     public partial class FrmInsertNormative : Form
     {
         public int id_normative;
@@ -20,6 +24,8 @@ namespace PrivacyAssessment
         public string name;
         public List<Document> normatives;
 
+        // Constructor
+        // List the previously created normatives
         public FrmInsertNormative(List<Document> normatives)
         {
             InitializeComponent();
@@ -50,6 +56,7 @@ namespace PrivacyAssessment
             cmbNormatives.SelectedIndex = 0;
         }
 
+        // Sets the alias for the normative being used as a reference
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtAlias.Text))
@@ -65,6 +72,7 @@ namespace PrivacyAssessment
             }
         }
 
+        // Displays the information of the selected normative
         private void cmbNormatives_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBoxItem cmbItem = cmbNormatives.SelectedItem as ComboBoxItem;
