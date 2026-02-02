@@ -24,3 +24,5 @@ Next, modify the App.config file to determine the general parameters of executio
 - rpath: Set the path to the folder where the rscript is located (e.g., E:\Aplicaciones\R\bin).
 
 Once the App.config file has been configured, open the .sln solution and execute the application.
+
+The file Normatives.rar contains a video with an example of the execution of the application.
