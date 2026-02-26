@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.ComponentModel.Design.Serialization;
 using System.Configuration;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Net;
@@ -443,6 +444,8 @@ namespace PrivacyAssessment
 
             if (result == DialogResult.Yes)
             {
+                Stopwatch stopwatch = new Stopwatch();
+                stopwatch.Start();
                 int idCase = int.Parse(txtId.Text);
                 int idNormative = int.Parse(txtIdNormative.Text);
                 int idLaw = int.Parse(txtIdLaw.Text);
@@ -479,7 +482,10 @@ namespace PrivacyAssessment
                         btnNoncompliancesView.Enabled = true;
                     }
 
-                    MessageBox.Show("Query executed with success!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    stopwatch.Stop();
+
+                    double seconds = stopwatch.Elapsed.TotalSeconds;
+                    MessageBox.Show("Query executed with success in " + seconds.ToString("F3") + "seconds!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
