@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|e:\\doctorado\\privacyassessmentfrontend\\privacyassessment\\frmmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|E:\\Doctorado\\PrivacyAssessmentFrontend\\privacyassessment\\frmmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B094E18F-8452-45B2-97ED-D0946895F77D}|PrivacyAssessment\\PrivacyAssessment.csproj|solutionrelative:privacyassessment\\frmmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "PrivacyAssessment\\App.config",
               "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\App.config",
               "RelativeToolTip": "PrivacyAssessment\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2026-02-26T02:13:40.167Z",
               "EditorCaption": ""
@@ -53,14 +53,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrmManagement.cs [Dise\u00F1o]",
+              "Title": "FrmManagement.cs [Design]",
               "DocumentMoniker": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmManagement.cs",
               "RelativeDocumentMoniker": "PrivacyAssessment\\FrmManagement.cs",
-              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmManagement.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PrivacyAssessment\\FrmManagement.cs [Dise\u00F1o]",
+              "ToolTip": "E:\\Doctorado\\PrivacyAssessmentFrontend\\PrivacyAssessment\\FrmManagement.cs [Design]",
+              "RelativeToolTip": "PrivacyAssessment\\FrmManagement.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-25T23:20:56.053Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             }
           ]
         }
