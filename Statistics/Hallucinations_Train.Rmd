@@ -95,8 +95,8 @@ picturesubclauses <- ggplot(df, aes(x = ct, y = subclause_count, color = categor
   scale_color_manual(values = palette)+
   labs(
     x = "Confidence threshold",
-    y = "Hallucinations",
-    color = "Standard / Privacy Legal Framework"
+    y = "Number of hallucinations",
+    color = "Privacy Legal Framework"
   ) +
   theme_light()
 
