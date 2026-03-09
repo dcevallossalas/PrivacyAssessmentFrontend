@@ -63,6 +63,10 @@ ct <- seq(from = 0, to = 1, by = 0.05)
 
 ### Number of clauses met by confidence threshold
 
+<p style="text-align: justify;">
+The following graph presents the number of clauses met by confidence threshold for each element of analysis (privacy legal framework or jurisdiction). The number of compliant clauses decreases as the confidence threshold increases.
+</p>
+
 ```{r warning=FALSE,echo=FALSE}
 df <- data.frame()
 
@@ -104,6 +108,10 @@ pictureclauses
 
 ### Number of subclauses met by confidence threshold
 
+<p style="text-align: justify;">
+This second graph presents the number of subclauses met by confidence threshold for each element of analysis (privacy legal framework or jurisdiction). Likewise, the number of compliant subclauses decreases as the confidence threshold increases. The results demonstrate the degree of alignment of each jurisdiction or privacy legal framework, enabling a legal interpretation.
+</p>
+
 ```{r warning=FALSE, echo=FALSE}
 df <- data.frame()
 
@@ -144,6 +152,10 @@ picturesubclauses
 ```
 
 ### Number of subclauses met for each clause at a 0.80 confidence threshold
+
+<p style="text-align: justify;">
+The following section presents the results corresponding to the number of compliant subclauses for each clause of ISO/IEC 27701:2025 at a confidence threshold of 0.80.
+</p>
 
 ```{r warning=FALSE, echo=FALSE}
 th_ref = 0.80
