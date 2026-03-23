@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrivacyAssessment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c8080a2b799544d593f67b3cd0fea76af0d5de4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b78f581552d18ae5734a099866bc200dccc3ffd2")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrivacyAssessment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrivacyAssessment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

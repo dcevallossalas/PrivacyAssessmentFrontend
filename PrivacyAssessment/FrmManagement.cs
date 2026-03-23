@@ -449,7 +449,10 @@ namespace PrivacyAssessment
                 int idCase = int.Parse(txtId.Text);
                 int idNormative = int.Parse(txtIdNormative.Text);
                 int idLaw = int.Parse(txtIdLaw.Text);
-                string apiKey = ConfigurationManager.AppSettings["apiKey"];
+
+                string apiKey_ciphered = File.ReadAllText(ConfigurationManager.AppSettings["apiKey_ciphered"]);
+                string apiKey_private = File.ReadAllText(ConfigurationManager.AppSettings["apiKey_private"]);
+                string apiKey = ApiKey.Decrypt(apiKey_ciphered, apiKey_private);
 
                 GptQuery gptQuery = new GptQuery
                 {
