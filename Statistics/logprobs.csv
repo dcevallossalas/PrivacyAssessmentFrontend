@@ -1,70 +1,185 @@
 category,principle,goal,logprob
-Law 18332 (Uruguay),1,0,-0.313964
-Law 18332 (Uruguay),1,1,-0.027152
-Law 18332 (Uruguay),1,2,-0.001517
-Law 18332 (Uruguay),1,3,-35.8312
-Law 18332 (Uruguay),2,4,-35.8312
-Law 18332 (Uruguay),2,5,-0.371136
-Law 18332 (Uruguay),2,6,-0.703945
-Law 18332 (Uruguay),3,7,-35.8312
-Law 18332 (Uruguay),3,8,-35.8312
-Law 18332 (Uruguay),3,9,-35.8312
-Law 18332 (Uruguay),4,10,-35.8312
-Law 18332 (Uruguay),4,11,-35.8312
-Law 18332 (Uruguay),4,12,-35.8312
-Law 18332 (Uruguay),4,13,-0.38355
-Law 18332 (Uruguay),4,14,-0.00016
-Law 18332 (Uruguay),5,15,-3e-06
-Law 18332 (Uruguay),5,16,-35.8312
-Law 18332 (Uruguay),5,17,-35.8312
-Law 18332 (Uruguay),6,18,-35.8312
-Law 18332 (Uruguay),6,19,-35.8312
-Law 18332 (Uruguay),6,20,-35.8312
-Law 18332 (Uruguay),7,21,-35.8312
-Law 18332 (Uruguay),7,22,-0.522866
-LGPD - Law 173709 (Brazil),1,0,-0.008615
-LGPD - Law 173709 (Brazil),1,1,-2e-06
-LGPD - Law 173709 (Brazil),1,2,-41.0608
-LGPD - Law 173709 (Brazil),1,3,-41.0608
-LGPD - Law 173709 (Brazil),2,4,-41.0608
-LGPD - Law 173709 (Brazil),2,5,-41.0608
-LGPD - Law 173709 (Brazil),2,6,-0.314458
-LGPD - Law 173709 (Brazil),3,7,-1e-06
-LGPD - Law 173709 (Brazil),3,8,-41.0608
-LGPD - Law 173709 (Brazil),3,9,-41.0608
-LGPD - Law 173709 (Brazil),4,10,-0.689968
-LGPD - Law 173709 (Brazil),4,11,-0.196738
-LGPD - Law 173709 (Brazil),4,12,-0.006716
-LGPD - Law 173709 (Brazil),4,13,0.0
-LGPD - Law 173709 (Brazil),4,14,0.0
-LGPD - Law 173709 (Brazil),5,15,-2e-06
-LGPD - Law 173709 (Brazil),5,16,-2e-06
-LGPD - Law 173709 (Brazil),5,17,-0.000161
-LGPD - Law 173709 (Brazil),6,18,-0.002161
-LGPD - Law 173709 (Brazil),6,19,-0.615919
-LGPD - Law 173709 (Brazil),6,20,-41.0608
-LGPD - Law 173709 (Brazil),7,21,-0.50343
-LGPD - Law 173709 (Brazil),7,22,0.0
-ISO IEC 27701,1,0,0
-ISO IEC 27701,1,1,0
-ISO IEC 27701,1,2,0
-ISO IEC 27701,1,3,0
-ISO IEC 27701,2,4,0
-ISO IEC 27701,2,5,0
-ISO IEC 27701,2,6,0
-ISO IEC 27701,3,7,0
-ISO IEC 27701,3,8,0
-ISO IEC 27701,3,9,0
-ISO IEC 27701,4,10,0
-ISO IEC 27701,4,11,0
-ISO IEC 27701,4,12,0
-ISO IEC 27701,4,13,0
-ISO IEC 27701,4,14,0
-ISO IEC 27701,5,15,0
-ISO IEC 27701,5,16,0
-ISO IEC 27701,5,17,0
-ISO IEC 27701,6,18,0
-ISO IEC 27701,6,19,0
-ISO IEC 27701,6,20,0
-ISO IEC 27701,7,21,0
-ISO IEC 27701,7,22,0
+ISO/IEC 27701:2025,1,0,0
+ISO/IEC 27701:2025,1,1,0
+ISO/IEC 27701:2025,1,2,0
+ISO/IEC 27701:2025,1,3,0
+ISO/IEC 27701:2025,2,4,0
+ISO/IEC 27701:2025,2,5,0
+ISO/IEC 27701:2025,2,6,0
+ISO/IEC 27701:2025,3,7,0
+ISO/IEC 27701:2025,3,8,0
+ISO/IEC 27701:2025,3,9,0
+ISO/IEC 27701:2025,4,10,0
+ISO/IEC 27701:2025,4,11,0
+ISO/IEC 27701:2025,4,12,0
+ISO/IEC 27701:2025,4,13,0
+ISO/IEC 27701:2025,4,14,0
+ISO/IEC 27701:2025,5,15,0
+ISO/IEC 27701:2025,5,16,0
+ISO/IEC 27701:2025,5,17,0
+ISO/IEC 27701:2025,6,18,0
+ISO/IEC 27701:2025,6,19,0
+ISO/IEC 27701:2025,6,20,0
+ISO/IEC 27701:2025,7,21,0
+ISO/IEC 27701:2025,7,22,0
+Europe,1,0,-0.002883
+Europe,1,1,-0.002197
+Europe,1,2,-0.000612
+Europe,1,3,-0.275832
+Europe,2,4,-0.07097
+Europe,2,5,-1.2e-05
+Europe,2,6,-1e-06
+Europe,3,7,0.0
+Europe,3,8,-0.000173
+Europe,3,9,-0.006758
+Europe,4,10,-7e-06
+Europe,4,11,-8e-06
+Europe,4,12,-1.9e-05
+Europe,4,13,0.0
+Europe,4,14,0.0
+Europe,5,15,-1e-06
+Europe,5,16,0.0
+Europe,5,17,0.0
+Europe,6,18,-0.000152
+Europe,6,19,-0.00076
+Europe,6,20,-2e-06
+Europe,7,21,-2e-06
+Europe,7,22,0.0
+Paraguay,1,0,-54.3053
+Paraguay,1,1,-0.162349
+Paraguay,1,2,-54.3053
+Paraguay,1,3,-54.3053
+Paraguay,2,4,-54.3053
+Paraguay,2,5,-0.028108
+Paraguay,2,6,-54.3053
+Paraguay,3,7,-0.251992
+Paraguay,3,8,-54.3053
+Paraguay,3,9,-54.3053
+Paraguay,4,10,-1.0043
+Paraguay,4,11,-54.3053
+Paraguay,4,12,-54.3053
+Paraguay,4,13,-54.3053
+Paraguay,4,14,-54.3053
+Paraguay,5,15,-0.73733
+Paraguay,5,16,-0.000183
+Paraguay,5,17,-0.000939
+Paraguay,6,18,-1.3e-05
+Paraguay,6,19,-54.3053
+Paraguay,6,20,-54.3053
+Paraguay,7,21,-0.000808
+Paraguay,7,22,0.0
+Chile,1,0,-0.305639
+Chile,1,1,-0.000139
+Chile,1,2,-0.315314
+Chile,1,3,-1.3
+Chile,2,4,-0.269813
+Chile,2,5,-5.9e-05
+Chile,2,6,-1e-06
+Chile,3,7,-4e-06
+Chile,3,8,-72.1618
+Chile,3,9,-0.64332
+Chile,4,10,-0.002333
+Chile,4,11,-0.026702
+Chile,4,12,-0.000553
+Chile,4,13,-1e-06
+Chile,4,14,-3.2e-05
+Chile,5,15,-1e-06
+Chile,5,16,-3.8e-05
+Chile,5,17,-2e-06
+Chile,6,18,-0.000139
+Chile,6,19,-72.1618
+Chile,6,20,-72.1618
+Chile,7,21,-0.603309
+Chile,7,22,0.0
+Ecuador,1,0,-63.7406
+Ecuador,1,1,-0.252886
+Ecuador,1,2,-63.7406
+Ecuador,1,3,-63.7406
+Ecuador,2,4,-63.7406
+Ecuador,2,5,-63.7406
+Ecuador,2,6,-63.7406
+Ecuador,3,7,-0.344583
+Ecuador,3,8,-63.7406
+Ecuador,3,9,-63.7406
+Ecuador,4,10,-63.7406
+Ecuador,4,11,-63.7406
+Ecuador,4,12,-63.7406
+Ecuador,4,13,-1.36679
+Ecuador,4,14,-63.7406
+Ecuador,5,15,-0.43015
+Ecuador,5,16,-5.9e-05
+Ecuador,5,17,-0.00025
+Ecuador,6,18,-0.040245
+Ecuador,6,19,-0.001996
+Ecuador,6,20,-63.7406
+Ecuador,7,21,-0.045964
+Ecuador,7,22,0.0
+México,1,0,-29.3681
+México,1,1,-0.57773
+México,1,2,-0.409912
+México,1,3,-0.588861
+México,2,4,-0.281722
+México,2,5,-0.000181
+México,2,6,0.0
+México,3,7,-1e-06
+México,3,8,-0.000558
+México,3,9,-29.3681
+México,4,10,-0.313326
+México,4,11,0.0
+México,4,12,-0.038186
+México,4,13,-3e-06
+México,4,14,0.0
+México,5,15,-2e-06
+México,5,16,0.0
+México,5,17,-5e-06
+México,6,18,-3e-06
+México,6,19,-6.5e-05
+México,6,20,-0.003097
+México,7,21,0.0
+México,7,22,0.0
+Colombia,1,0,-32.7339
+Colombia,1,1,-0.163613
+Colombia,1,2,-32.7339
+Colombia,1,3,-32.7339
+Colombia,2,4,-32.7339
+Colombia,2,5,-0.00742
+Colombia,2,6,-0.00096
+Colombia,3,7,-0.530123
+Colombia,3,8,-32.7339
+Colombia,3,9,-32.7339
+Colombia,4,10,-0.950831
+Colombia,4,11,0.0
+Colombia,4,12,-32.7339
+Colombia,4,13,-0.029753
+Colombia,4,14,-2e-06
+Colombia,5,15,-0.000435
+Colombia,5,16,-0.061839
+Colombia,5,17,-0.000239
+Colombia,6,18,-0.05708
+Colombia,6,19,-32.7339
+Colombia,6,20,-32.7339
+Colombia,7,21,-0.075767
+Colombia,7,22,0.0
+Perú,1,0,-40.9941
+Perú,1,1,-0.184237
+Perú,1,2,-0.064714
+Perú,1,3,-0.631732
+Perú,2,4,-0.528935
+Perú,2,5,-0.014177
+Perú,2,6,-4e-06
+Perú,3,7,-0.000285
+Perú,3,8,-40.9941
+Perú,3,9,-0.669152
+Perú,4,10,-1e-05
+Perú,4,11,0.0
+Perú,4,12,-2.9e-05
+Perú,4,13,0.0
+Perú,4,14,0.0
+Perú,5,15,0.0
+Perú,5,16,-1.1e-05
+Perú,5,17,-9e-06
+Perú,6,18,-5.3e-05
+Perú,6,19,-0.022685
+Perú,6,20,-0.005999
+Perú,7,21,-2e-06
+Perú,7,22,0.0
